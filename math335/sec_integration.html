@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-11T12:45:27-06:00       *-->
+<!--*       on 2021-01-11T13:52:44-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -98,20 +98,20 @@ MathJax.Hub.Config({
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_integration"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">5</span> <span class="title">Integration</span>
 </h2>
-<p id="p-259">Unlike with differentiation, we will need a number of auxiliary definitions for beginning integration.</p>
+<p id="p-260">Unlike with differentiation, we will need a number of auxiliary definitions for beginning integration.</p>
 <article class="definition definition-like" id="definition-20"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1</span><span class="period">.</span>
 </h6>
-<p id="p-260">A set of points \(\{t_0,t_1,\ldots,t_n\}\) such that \(a=t_0\text{,}\) \(b=t_n\text{,}\) and \(t_{i-1}\lt t_{i}\) for all \(i\) is called a <dfn class="terminology">partition</dfn> of the closed interval \([a,b]\text{.}\)</p></article><article class="example example-like" id="example-41"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-41"><h6 class="heading">
+<p id="p-261">A set of points \(\{t_0,t_1,\ldots,t_n\}\) such that \(a=t_0\text{,}\) \(b=t_n\text{,}\) and \(t_{i-1}\lt t_{i}\) for all \(i\) is called a <dfn class="terminology">partition</dfn> of the closed interval \([a,b]\text{.}\)</p></article><article class="example example-like" id="example-41"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-41"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.2</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-41"><article class="example example-like"><p id="p-261">Give some partitions of \([2,4]\) and \([-1,0]\text{.}\) What would the points of a partition of \([0,1]\) be if \(t_{i}-t_{i-1}\) is the same for all \(i\text{?}\)</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-41"><article class="example example-like"><p id="p-262">Give some partitions of \([2,4]\) and \([-1,0]\text{.}\) What would the points of a partition of \([0,1]\) be if \(t_{i}-t_{i-1}\) is the same for all \(i\text{?}\)</p></article></div>
 <article class="definition definition-like" id="definition-21"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.3</span><span class="period">.</span>
 </h6>
-<p id="p-262">Given \([a,b]\) and calling \(\frac{b-a}{n}=\Delta t\text{,}\) we may for convenience give the partition \(\left\{a,a+\Delta t, a+2\Delta t, \ldots ,b-\Delta t, b\right\}\) the name <dfn class="terminology">regular partition</dfn> \(P_n\) (where \([a,b]\) is implicit).</p></article><article class="definition definition-like" id="definition-22"><h6 class="heading">
+<p id="p-263">Given \([a,b]\) and calling \(\frac{b-a}{n}=\Delta t\text{,}\) we may for convenience give the partition \(\left\{a,a+\Delta t, a+2\Delta t, \ldots ,b-\Delta t, b\right\}\) the name <dfn class="terminology">regular partition</dfn> \(P_n\) (where \([a,b]\) is implicit).</p></article><article class="definition definition-like" id="definition-22"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.4</span><span class="period">.</span>
 </h6>
-<p id="p-263">Given a partition \(P=\{t_0,t_1,\ldots,t_n\}\) of \([a,b]\text{,}\) let \(y_i\) be the supremum of \(\{f(x)\mid x\in [t_{i-1},t_i]\}\text{.}\) We say that the sum</p>
+<p id="p-264">Given a partition \(P=\{t_0,t_1,\ldots,t_n\}\) of \([a,b]\text{,}\) let \(y_i\) be the supremum of \(\{f(x)\mid x\in [t_{i-1},t_i]\}\text{.}\) We say that the sum</p>
 <div class="displaymath">
 \begin{equation*}
 U_{P}(f) = \sum_{i=1}^n y_i(t_i-t_{i-1})
@@ -120,7 +120,7 @@ U_{P}(f) = \sum_{i=1}^n y_i(t_i-t_{i-1})
 <p data-braille="continuation">is the <dfn class="terminology">upper sum</dfn> for \(P\) of \(f\) on \([a,b]\text{.}\)</p></article><article class="definition definition-like" id="definition-23"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.5</span><span class="period">.</span>
 </h6>
-<p id="p-264">Given a partition \(P=\{t_0,t_1,\ldots,t_n\}\) of \([a,b]\text{,}\) let \(z_i\) be the infimum of \(\{f(x)\mid x\in [t_{i-1},t_i]\}\text{.}\) We say the sum</p>
+<p id="p-265">Given a partition \(P=\{t_0,t_1,\ldots,t_n\}\) of \([a,b]\text{,}\) let \(z_i\) be the infimum of \(\{f(x)\mid x\in [t_{i-1},t_i]\}\text{.}\) We say the sum</p>
 <div class="displaymath">
 \begin{equation*}
 L_{P}(f) = \sum_{i=1}^n z_i(t_i-t_{i-1})
@@ -129,138 +129,138 @@ L_{P}(f) = \sum_{i=1}^n z_i(t_i-t_{i-1})
 <p data-braille="continuation">is the <dfn class="terminology">lower sum</dfn> for \(P\) of \(f\) on \([a,b]\text{.}\)</p></article><article class="definition definition-like" id="definition-24"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6</span><span class="period">.</span>
 </h6>
-<p id="p-265">A <dfn class="terminology">bounded function</dfn> is a function with a bounded image set.</p></article><p id="p-266">We will assume all functions in this section are bounded.</p>
+<p id="p-266">A <dfn class="terminology">bounded function</dfn> is a function with a bounded image set.</p></article><p id="p-267">We will assume all functions in this section are bounded.</p>
 <article class="example example-like" id="example-42"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-42"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.7</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-42"><article class="example example-like"><p id="p-267">Give some upper and lower sums on some of these partitions with non-constant bounded functions.</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-42"><article class="example example-like"><p id="p-268">Give some upper and lower sums on some of these partitions with non-constant bounded functions.</p></article></div>
 <article class="problem example-like" id="problem-67"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-67"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.8</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-67"><article class="problem example-like"><p id="p-268">Let \(f(x)=0\) for each number \(x\) in \([0,1]\) except \(x=0\text{,}\) and let \(f(0)=1\text{.}\) Show that \(U_{P}(f)&gt;0\) for all partitions of \([0,1]\text{,}\) but that for any positive number \(\epsilon\) there is a partition \(P_\epsilon\) such that \(U_{P_\epsilon}(f)\lt \epsilon\text{.}\) In addition, fully describe all lower sums of \(f\) on \([0,1]\text{.}\)</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-67"><article class="problem example-like"><p id="p-269">Let \(f(x)=0\) for each number \(x\) in \([0,1]\) except \(x=0\text{,}\) and let \(f(0)=1\text{.}\) Show that \(U_{P}(f)&gt;0\) for all partitions of \([0,1]\text{,}\) but that for any positive number \(\epsilon\) there is a partition \(P_\epsilon\) such that \(U_{P_\epsilon}(f)\lt \epsilon\text{.}\) In addition, fully describe all lower sums of \(f\) on \([0,1]\text{.}\)</p></article></div>
 <article class="problem example-like" id="problem-68"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-68"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.9</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-68"><article class="problem example-like"><p id="p-269">Let \(f(x)=x\text{,}\) and let \(P_n\) be the (regular) partition of \([0,1]\) given by \(\left\{0,\frac{1}{n},\frac{2}{n},\ldots,\frac{n-1}{n},1\right\}\text{.}\) Compute \(U_{P_5}(f)\) and \(L_{P_5}(f)\text{,}\) and then give a formula for \(U_{P_n}(f)\) and \(L_{P_n}(f)\text{.}\)</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-68"><article class="problem example-like"><p id="p-270">Let \(f(x)=x\text{,}\) and let \(P_n\) be the (regular) partition of \([0,1]\) given by \(\left\{0,\frac{1}{n},\frac{2}{n},\ldots,\frac{n-1}{n},1\right\}\text{.}\) Compute \(U_{P_5}(f)\) and \(L_{P_5}(f)\text{,}\) and then give a formula for \(U_{P_n}(f)\) and \(L_{P_n}(f)\text{.}\)</p></article></div>
 <article class="problem example-like" id="problem-69"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-69"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.10</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-69"><article class="problem example-like"><p id="p-270">Suppose that \(f\) is bounded, with \(m\) a lower bound and \(M\) an upper bound of \(f([a,b])\text{.}\) Show that, for any partition \(P\) of \([a,b]\text{,}\) \(U_P(f)\leq M(b-a)\) and \(L_P(f)\geq m(b-a)\text{.}\)</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-69"><article class="problem example-like"><p id="p-271">Suppose that \(f\) is bounded, with \(m\) a lower bound and \(M\) an upper bound of \(f([a,b])\text{.}\) Show that, for any partition \(P\) of \([a,b]\text{,}\) \(U_P(f)\leq M(b-a)\) and \(L_P(f)\geq m(b-a)\text{.}\)</p></article></div>
 <article class="problem example-like" id="problem-70"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-70"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.11</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-70"><article class="problem example-like"><p id="p-271">Suppose that \(f\) is bounded on \([a,b]\) and \(P\) is a partition of \([a,b]\text{.}\) Show that \(L_P(f)\leq U_P(f)\text{.}\)</p></article></div>
-<p id="p-272">Note that as a result of the previous problems that the set of all upper and lower sums of \(f\) is a bounded point set.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-70"><article class="problem example-like"><p id="p-272">Suppose that \(f\) is bounded on \([a,b]\) and \(P\) is a partition of \([a,b]\text{.}\) Show that \(L_P(f)\leq U_P(f)\text{.}\)</p></article></div>
+<p id="p-273">Note that as a result of the previous problems that the set of all upper and lower sums of \(f\) is a bounded point set.</p>
 <article class="definition definition-like" id="definition-25"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.12</span><span class="period">.</span>
 </h6>
-<p id="p-273">We say that a partition \(Q\) <dfn class="terminology">refines</dfn> (or <dfn class="terminology">is a refinement of</dfn>) a partition \(P\) if \(P\) and \(Q\) are both partitions of \([a,b]\) and \(P\subseteq Q\text{.}\)</p></article><article class="example example-like" id="example-43"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-43"><h6 class="heading">
+<p id="p-274">We say that a partition \(Q\) <dfn class="terminology">refines</dfn> (or <dfn class="terminology">is a refinement of</dfn>) a partition \(P\) if \(P\) and \(Q\) are both partitions of \([a,b]\) and \(P\subseteq Q\text{.}\)</p></article><article class="example example-like" id="example-43"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-43"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.13</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-43"><article class="example example-like"><p id="p-274">Take some partitions from previous examples, and refine them.</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-43"><article class="example example-like"><p id="p-275">Take some partitions from previous examples, and refine them.</p></article></div>
 <article class="problem example-like" id="problem-71"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-71"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.14</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-71"><article class="problem example-like"><p id="p-275">If \(P\) and \(P'\) are both partitions of \([a,b]\text{,}\) there is a partition \(Q\) which is a refinement of both.</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-71"><article class="problem example-like"><p id="p-276">If \(P\) and \(P'\) are both partitions of \([a,b]\text{,}\) there is a partition \(Q\) which is a refinement of both.</p></article></div>
 <article class="problem example-like" id="problem-72"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-72"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.15</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-72"><article class="problem example-like"><p id="p-276">If \(f\) is a bounded function on \([a,b]\) and \(P\) and \(Q\) are partitions of \([a,b]\) such that \(Q\) refines \(P\text{,}\) show that \(L_P(f)\leq L_Q(f)\) and \(U_P(f)\geq U_Q(f)\text{.}\)</p></article></div>
-<p id="p-277">We are nearly ready to define (definite) integrals.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-72"><article class="problem example-like"><p id="p-277">If \(f\) is a bounded function on \([a,b]\) and \(P\) and \(Q\) are partitions of \([a,b]\) such that \(Q\) refines \(P\text{,}\) show that \(L_P(f)\leq L_Q(f)\) and \(U_P(f)\geq U_Q(f)\text{.}\)</p></article></div>
+<p id="p-278">We are nearly ready to define (definite) integrals.</p>
 <article class="definition definition-like" id="definition-26"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.16</span><span class="period">.</span>
 </h6>
-<p id="p-278">With \(f\) a bounded function on \([a,b]\text{,}\) we define the <dfn class="terminology">upper integral</dfn> from \(a\) to \(b\) of \(f\) to be the infimum of the set of all upper sums for \(f\) on \([a,b]\text{.}\) We denote the upper integral by \(\overline{\int_a^b f}\text{.}\)</p></article><article class="definition definition-like" id="definition-27"><h6 class="heading">
+<p id="p-279">With \(f\) a bounded function on \([a,b]\text{,}\) we define the <dfn class="terminology">upper integral</dfn> from \(a\) to \(b\) of \(f\) to be the infimum of the set of all upper sums for \(f\) on \([a,b]\text{.}\) We denote the upper integral by \(\overline{\int_a^b f}\text{.}\)</p></article><article class="definition definition-like" id="definition-27"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.17</span><span class="period">.</span>
 </h6>
-<p id="p-279">With \(f\) a bounded function on \([a,b]\text{,}\) we define the <dfn class="terminology">lower integral</dfn> from \(a\) to \(b\) of \(f\) to be the supremum of the set of all lower sums for \(f\) on \([a,b]\text{.}\) We denote the lower integral by \(\underline{\int_a^b f}\text{.}\)</p></article><article class="example example-like" id="example-44"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-44"><h6 class="heading">
+<p id="p-280">With \(f\) a bounded function on \([a,b]\text{,}\) we define the <dfn class="terminology">lower integral</dfn> from \(a\) to \(b\) of \(f\) to be the supremum of the set of all lower sums for \(f\) on \([a,b]\text{.}\) We denote the lower integral by \(\underline{\int_a^b f}\text{.}\)</p></article><article class="example example-like" id="example-44"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-44"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.18</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-44"><article class="example example-like"><p id="p-280">Why do the upper integral and lower integral always exist in this context?</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-44"><article class="example example-like"><p id="p-281">Why do the upper integral and lower integral always exist in this context?</p></article></div>
 <article class="problem example-like" id="problem-73"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-73"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.19</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-73"><article class="problem example-like"><p id="p-281">With \(f\) as throughout this section, show that \(\overline{\int_a^b f}\geq \underline{\int_a^b f}\text{.}\)</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-73"><article class="problem example-like"><p id="p-282">With \(f\) as throughout this section, show that \(\overline{\int_a^b f}\geq \underline{\int_a^b f}\text{.}\)</p></article></div>
 <article class="problem example-like" id="problem-74"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-74"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.20</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-74"><article class="problem example-like"><p id="p-282">If we let \(f(x)\) be the function such that \(f(x)=1\) if \(x\in\mathbb{Q}\) but \(f(x)=0\) otherwise, show that in this case \(\overline{\int_0^1 f}&gt; \underline{\int_0^1 f}\text{.}\)</p></article></div>
-<p id="p-283">We can get more interesting conclusions if \(f\) has more properties.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-74"><article class="problem example-like"><p id="p-283">If we let \(f(x)\) be the function such that \(f(x)=1\) if \(x\in\mathbb{Q}\) but \(f(x)=0\) otherwise, show that in this case \(\overline{\int_0^1 f}&gt; \underline{\int_0^1 f}\text{.}\)</p></article></div>
+<p id="p-284">We can get more interesting conclusions if \(f\) has more properties.</p>
 <article class="problem example-like" id="problem-75"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-75"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.21</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-75"><article class="problem example-like"><p id="p-284">Suppose that \(f\) is not just bounded, but continuous. Suppose further that \(f(x)\geq 0\) for all \(x\in [a,b]\) <em class="emphasis">and</em> that for some \(z\in [a,b]\text{,}\) \(f(z)&gt;0\text{.}\) Then show that \(\overline{\int_a^b f}&gt;0\text{.}\)</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-75"><article class="problem example-like"><p id="p-285">Suppose that \(f\) is not just bounded, but continuous. Suppose further that \(f(x)\geq 0\) for all \(x\in [a,b]\) <em class="emphasis">and</em> that for some \(z\in [a,b]\text{,}\) \(f(z)&gt;0\text{.}\) Then show that \(\overline{\int_a^b f}&gt;0\text{.}\)</p></article></div>
 <article class="definition definition-like" id="definition-28"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.22</span><span class="period">.</span>
 </h6>
-<p id="p-285">For \(f\) as above, if \(\overline{\int_a^b f}=\underline{\int_a^b f}\text{,}\) then we say that \(f\) is <dfn class="terminology">integrable</dfn> on \([a,b]\) and call this common value the <dfn class="terminology">integral</dfn> of \(f\) from \(a\) to \(b\text{.}\) We denote the integral, if it exists, by</p>
+<p id="p-286">For \(f\) as above, if \(\overline{\int_a^b f}=\underline{\int_a^b f}\text{,}\) then we say that \(f\) is <dfn class="terminology">integrable</dfn> on \([a,b]\) and call this common value the <dfn class="terminology">integral</dfn> of \(f\) from \(a\) to \(b\text{.}\) We denote the integral, if it exists, by</p>
 <div class="displaymath">
 \begin{equation*}
 \int_a^b f\text{ or } \int_a^b f(x)\, dx\;\text{.}
 \end{equation*}
-</div></article><p id="p-286">Traditionally when this value exists we say that \(f\) is <em class="emphasis">Riemann</em> integrable and the number \(\int_a^b f\) is the Riemann integral. Technically, however, it is the <em class="emphasis">Darboux</em> integral, with Riemann integrals coming from so-called Riemann sums. The two notions can be proved equivalent.</p>
-<p id="p-287">Since we saw above that the lower and upper integrals can be distinct, there exist nonintegrable bounded functions (in this sense). Luckily, there also exist integrable functions.</p>
+</div></article><p id="p-287">Traditionally when this value exists we say that \(f\) is <em class="emphasis">Riemann</em> integrable and the number \(\int_a^b f\) is the Riemann integral. Technically, however, it is the <em class="emphasis">Darboux</em> integral, with Riemann integrals coming from so-called Riemann sums. The two notions can be proved equivalent.</p>
+<p id="p-288">Since we saw above that the lower and upper integrals can be distinct, there exist nonintegrable bounded functions (in this sense). Luckily, there also exist integrable functions.</p>
 <article class="example example-like" id="example-45"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-45"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.23</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-45"><article class="example example-like"><p id="p-288">Show that constant functions \(f(x)=c\) are indeed integrable over any closed interval.</p></article></div>
-<p id="p-289">The information we have from previous examples is <em class="emphasis">not</em> quite enough to show that we have more integrable functions, even though you are familiar with computing integrals. Since many applications in a variety of fields come directly from approximations involving the sums we have been computing, it would be best to have exact values for these applications, not just approximations from the sums. Keep this in mind as we progress.</p>
-<p id="p-290">A first step in this direction is the following characterization, which is very useful in showing functions are integrable.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-45"><article class="example example-like"><p id="p-289">Show that constant functions \(f(x)=c\) are indeed integrable over any closed interval.</p></article></div>
+<p id="p-290">The information we have from previous examples is <em class="emphasis">not</em> quite enough to show that we have more integrable functions, even though you are familiar with computing integrals. Since many applications in a variety of fields come directly from approximations involving the sums we have been computing, it would be best to have exact values for these applications, not just approximations from the sums. Keep this in mind as we progress.</p>
+<p id="p-291">A first step in this direction is the following characterization, which is very useful in showing functions are integrable.</p>
 <article class="problem example-like" id="problem-76"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-76"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.24</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-76"><article class="problem example-like"><p id="p-291">Let \(f\) be a bounded function on \([a,b]\text{.}\) Show that if \(f\) is integrable then for each positive number \(\epsilon\) there is a partition \(P\) of \([a,b]\) such that \(U_P(f)-L_P(f)\lt \epsilon\text{,}\) <em class="emphasis">or</em> show the converse (both work).</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-76"><article class="problem example-like"><p id="p-292">Let \(f\) be a bounded function on \([a,b]\text{.}\) Show that if \(f\) is integrable then for each positive number \(\epsilon\) there is a partition \(P\) of \([a,b]\) such that \(U_P(f)-L_P(f)\lt \epsilon\text{,}\) <em class="emphasis">or</em> show the converse (both work).</p></article></div>
 <article class="problem example-like" id="problem-77"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-77"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.25</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-77"><article class="problem example-like"><p id="p-292">Pick one of these functions, show it is integrable on \([0,1]\text{,}\) and compute it. (Both are; you may want to use previous problems.)</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-77"><article class="problem example-like"><p id="p-293">Pick one of these functions, show it is integrable on \([0,1]\text{,}\) and compute it. (Both are; you may want to use previous problems.)</p>
 <ul class="disc">
-<li id="li-31"><p id="p-293">The function \(f\) such that \(f(x)=0\) for each number \(x\) in \([0,1]\) except \(x=0\text{,}\) where \(f(0)=1\text{;}\)</p></li>
-<li id="li-32"><p id="p-294">The function \(f(x)=x\text{.}\)</p></li>
+<li id="li-31"><p id="p-294">The function \(f\) such that \(f(x)=0\) for each number \(x\) in \([0,1]\) except \(x=0\text{,}\) where \(f(0)=1\text{;}\)</p></li>
+<li id="li-32"><p id="p-295">The function \(f(x)=x\text{.}\)</p></li>
 </ul></article></div>
 <article class="example example-like" id="example-46"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-46"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.26</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-46"><article class="example example-like"><p id="p-295">Let \(g(x)\) be the function such that \(f(x)=1/q\) if \(x=p/q\in\mathbb{Q}\) in lowest terms, but \(f(x)=0\) otherwise. Show this function is integrable.</p></article></div>
-<p id="p-296">This is not a lot of material to integrate. The next sets of theorems will vastly expand our repertoire, though not yet our formulas.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-46"><article class="example example-like"><p id="p-296">Let \(g(x)\) be the function such that \(f(x)=1/q\) if \(x=p/q\in\mathbb{Q}\) in lowest terms, but \(f(x)=0\) otherwise. Show this function is integrable.</p></article></div>
+<p id="p-297">This is not a lot of material to integrate. The next sets of theorems will vastly expand our repertoire, though not yet our formulas.</p>
 <article class="definition definition-like" id="definition-29"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.27</span><span class="period">.</span>
 </h6>
-<p id="p-297">A function is <dfn class="terminology">nondecreasing</dfn> if for each \(x\lt y\) in the domain of \(f\) we have \(f(x)\leq f(y)\text{.}\) (We say that it is <dfn class="terminology">(strictly) increasing</dfn> if \(f(x)\lt f(y)\) always. The concept of <dfn class="terminology">nonincreasing</dfn> is defined with \(\geq\) in place of \(\leq\text{.}\))</p></article><article class="example example-like" id="example-47"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-47"><h6 class="heading">
+<p id="p-298">A function is <dfn class="terminology">nondecreasing</dfn> if for each \(x\lt y\) in the domain of \(f\) we have \(f(x)\leq f(y)\text{.}\) (We say that it is <dfn class="terminology">(strictly) increasing</dfn> if \(f(x)\lt f(y)\) always. The concept of <dfn class="terminology">nonincreasing</dfn> is defined with \(\geq\) in place of \(\leq\text{.}\))</p></article><article class="example example-like" id="example-47"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-47"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.28</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-47"><article class="example example-like"><p id="p-298">Give several nondecreasing functions we haven't already used. (This is <em class="emphasis">very</em> similar to the equivalent sequence concept!)</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-47"><article class="example example-like"><p id="p-299">Give several nondecreasing functions we haven't already used. (This is <em class="emphasis">very</em> similar to the equivalent sequence concept!)</p></article></div>
 <article class="problem example-like" id="problem-78"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-78"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.29</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-78"><article class="problem example-like"><p id="p-299">Prove that a nondecreasing bounded function \(f\) on a closed interval \([a,b]\) is integrable.</p></article></div>
-<p id="p-300">You may want to write down a number of upper and lower sums to prepare for the previous problem. What previous problem will likely be easiest to use to prove integration theorems?</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-78"><article class="problem example-like"><p id="p-300">Prove that a nondecreasing bounded function \(f\) on a closed interval \([a,b]\) is integrable.</p></article></div>
+<p id="p-301">You may want to write down a number of upper and lower sums to prepare for the previous problem. What previous problem will likely be easiest to use to prove integration theorems?</p>
 <article class="example example-like" id="example-48"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-48"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.30</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-48"><article class="example example-like"><p id="p-301">It turns out that a nonincreasing bounded function \(f\) on a closed interval \([a,b]\) is integrable as well.</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-48"><article class="example example-like"><p id="p-302">It turns out that a nonincreasing bounded function \(f\) on a closed interval \([a,b]\) is integrable as well.</p></article></div>
 <article class="example example-like" id="example-49"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-49"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.31</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-49"><article class="example example-like"><p id="p-302">Since \(\sqrt{1-x^2}\) is nonincreasing on \([0,1]\text{,}\) this shows that</p>
-<p id="p-303">\(4\int_0^1 \sqrt{1-x^2}\,dx\) exists. What number is this?</p></article></div>
-<p id="p-304">The preceding results mean that most standard functions are integrable on certain intervals, even if we can't finish computing them yet; the next theorems verify that we can do it on most intervals, too.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-49"><article class="example example-like"><p id="p-303">Since \(\sqrt{1-x^2}\) is nonincreasing on \([0,1]\text{,}\) this shows that</p>
+<p id="p-304">\(4\int_0^1 \sqrt{1-x^2}\,dx\) exists. What number is this?</p></article></div>
+<p id="p-305">The preceding results mean that most standard functions are integrable on certain intervals, even if we can't finish computing them yet; the next theorems verify that we can do it on most intervals, too.</p>
 <article class="problem example-like" id="problem-79"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-79"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.32</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-79"><article class="problem example-like"><p id="p-305">Let \(c\in \mathbb{R}\) and let \(f\) be integrable on \([a,b]\text{.}\) Show that \(cf\) is integrable on \([a,b]\) and \(\int_a^b cf = c\int_a^b f\text{.}\)</p></article></div>
-<article class="hiddenproof" id="proof-20"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-20"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-20"><article class="hiddenproof"><p id="p-306">Here it's okay to just use that \(c\sup(M)=\sup(cM)\) because each upper sum really is exactly \(c\) times as big, since \(cf([a,b])=(cf)([a,b])\) by definition.</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-79"><article class="problem example-like"><p id="p-306">Let \(c\in \mathbb{R}\) and let \(f\) be integrable on \([a,b]\text{.}\) Show that \(cf\) is integrable on \([a,b]\) and \(\int_a^b cf = c\int_a^b f\text{.}\)</p></article></div>
+<article class="hiddenproof" id="proof-20"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-20"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-20"><article class="hiddenproof"><p id="p-307">Here it's okay to just use that \(c\sup(M)=\sup(cM)\) because each upper sum really is exactly \(c\) times as big, since \(cf([a,b])=(cf)([a,b])\) by definition.</p></article></div>
 <article class="example example-like" id="example-50"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-50"><h6 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.33</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-50"><article class="example example-like"><p id="p-307">Let \(f\) and \(g\) be integrable on \([a,b]\text{.}\) It turns out that \(f+g\) is integrable, and \(\int_a^b (f+g) = \int_a^b f +\int_a^b g\text{.}\)</p></article></div>
-<article class="hiddenproof" id="proof-21"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-21"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-21"><article class="hiddenproof"><p id="p-308">Actually, problem is that \(\sup(M+N)=\sup(M)+\sup(N)\) isn't relevant. Using \(\epsilon\) formulation with sums still doesn't work because of this. We need e.g. \(\sup(M_x+N_x)\leq \sup(M_x)+\sup(N_x)\) and other similar inequalities.</p></article></div>
-<p id="p-309">We will now head straight for the punchline to the story of calculus, the ‘fundamental theorems’.</p>
-<p id="p-310">We begin by proving some facts about the upper integral (they are also true for the lower integral). Remember, all functions are bounded.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-50"><article class="example example-like"><p id="p-308">Let \(f\) and \(g\) be integrable on \([a,b]\text{.}\) It turns out that \(f+g\) is integrable, and \(\int_a^b (f+g) = \int_a^b f +\int_a^b g\text{.}\)</p></article></div>
+<article class="hiddenproof" id="proof-21"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-21"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-21"><article class="hiddenproof"><p id="p-309">Actually, problem is that \(\sup(M+N)=\sup(M)+\sup(N)\) isn't relevant. Using \(\epsilon\) formulation with sums still doesn't work because of this. We need e.g. \(\sup(M_x+N_x)\leq \sup(M_x)+\sup(N_x)\) and other similar inequalities.</p></article></div>
+<p id="p-310">We will now head straight for the punchline to the story of calculus, the ‘fundamental theorems’.</p>
+<p id="p-311">We begin by proving some facts about the upper integral (they are also true for the lower integral). Remember, all functions are bounded.</p>
 <article class="problem example-like" id="problem-80"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-80"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.34</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-80"><article class="problem example-like"><p id="p-311">Assume that \([a,b]\) is a closed interval and \(c\in (a,b)\text{.}\) Show that \(\overline{\int_a^c f} +\overline{\int_c^b f} = \overline{\int_a^b f}\text{.}\)</p></article></div>
-<p id="p-312">On a related note, for upper (and indeed for lower and Riemann) integrals, we define \(\overline{\int_b^a f}=-\overline{\int_a^b f}\) and \(\overline{\int_a^a f} =0\text{.}\) Can you see why we do this?</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-80"><article class="problem example-like"><p id="p-312">Assume that \([a,b]\) is a closed interval and \(c\in (a,b)\text{.}\) Show that \(\overline{\int_a^c f} +\overline{\int_c^b f} = \overline{\int_a^b f}\text{.}\)</p></article></div>
+<p id="p-313">On a related note, for upper (and indeed for lower and Riemann) integrals, we define \(\overline{\int_b^a f}=-\overline{\int_a^b f}\) and \(\overline{\int_a^a f} =0\text{.}\) Can you see why we do this?</p>
 <article class="problem example-like" id="problem-81"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-81"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.35</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-81"><article class="problem example-like"><p id="p-313">Show that if \(f\leq g\) on the interval \([a,b]\text{,}\) then \(\overline{\int_a^b f} \leq \overline{\int_a^b g}\text{.}\)</p></article></div>
-<p id="p-314">The next property is of course also true for the regular integral (when it exists), and is called the integral mean value theorem. Can you see why?</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-81"><article class="problem example-like"><p id="p-314">Show that if \(f\leq g\) on the interval \([a,b]\text{,}\) then \(\overline{\int_a^b f} \leq \overline{\int_a^b g}\text{.}\)</p></article></div>
+<p id="p-315">The next property is of course also true for the regular integral (when it exists), and is called the integral mean value theorem. Can you see why?</p>
 <article class="problem example-like" id="problem-82"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-82"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.36</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-82"><article class="problem example-like"><p id="p-315">Let \(f\) be a continuous function on \([a,b]\text{;}\) then there is a number \(c\in [a,b]\) such that \(\overline{\int_a^b f} = f(c)(b-a)\text{.}\)</p></article></div>
-<p id="p-316">The next thing we do is <em class="emphasis">really</em> expand our repertoire of integrable functions!</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-82"><article class="problem example-like"><p id="p-316">Let \(f\) be a continuous function on \([a,b]\text{;}\) then there is a number \(c\in [a,b]\) such that \(\overline{\int_a^b f} = f(c)(b-a)\text{.}\)</p></article></div>
+<p id="p-317">The next thing we do is <em class="emphasis">really</em> expand our repertoire of integrable functions!</p>
 <article class="problem example-like" id="problem-83"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-83"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.37</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-83"><article class="problem example-like"><p id="p-317">Let \(U\) be defined such that for each \(x\in [a,b]\text{,}\) \(U(x) = \overline{\int_a^x f}\text{,}\) and let \(L\) be defined likewise but with \(\underline{\int_a^x f}\text{.}\) Show that if \(f\) is continuous on \([a,b]\text{,}\) then \(U\) and \(L\) are differentiable, with \(U'(x)=f(x)=L'(x)\text{.}\)</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-83"><article class="problem example-like"><p id="p-318">Let \(U\) be defined such that for each \(x\in [a,b]\text{,}\) \(U(x) = \overline{\int_a^x f}\text{,}\) and let \(L\) be defined likewise but with \(\underline{\int_a^x f}\text{.}\) Show that if \(f\) is continuous on \([a,b]\text{,}\) then \(U\) and \(L\) are differentiable, with \(U'(x)=f(x)=L'(x)\text{.}\)</p></article></div>
 <article class="problem example-like" id="problem-84"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-84"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.38</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-84"><article class="problem example-like"><p id="p-318">In the previous problem, show that in fact \(U(x)=L(x)\text{,}\) and conclude that if \(f\) is continuous on \([a,b]\) then \(f\) is integrable on \([a,b]\text{.}\)</p></article></div>
-<p id="p-319">And finally we get the most beloved theorems of all. You should be able to prove these without lots of subtle work, using the facts about lower and upper integrals.</p>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-84"><article class="problem example-like"><p id="p-319">In the previous problem, show that in fact \(U(x)=L(x)\text{,}\) and conclude that if \(f\) is continuous on \([a,b]\) then \(f\) is integrable on \([a,b]\text{.}\)</p></article></div>
+<p id="p-320">And finally we get the most beloved theorems of all. You should be able to prove these without lots of subtle work, using the facts about lower and upper integrals.</p>
 <article class="problem example-like" id="problem-85"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-85"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.39</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-85"><article class="problem example-like"><p id="p-320">Let \(f\) be a continuous function on \([a,b]\text{,}\) and let \(F\) be defined such that for each \(x\in [a,b]\text{,}\) \(F(x) = \int_a^x f\text{.}\) Then for each point \(c\in [a,b]\text{,}\) \(F\) has a derivative at \(c\) and we can compute \(F'(c)=f(c)\text{.}\)</p></article></div>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-85"><article class="problem example-like"><p id="p-321">Let \(f\) be a continuous function on \([a,b]\text{,}\) and let \(F\) be defined such that for each \(x\in [a,b]\text{,}\) \(F(x) = \int_a^x f\text{.}\) Then for each point \(c\in [a,b]\text{,}\) \(F\) has a derivative at \(c\) and we can compute \(F'(c)=f(c)\text{.}\)</p></article></div>
 <article class="problem example-like" id="problem-86"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-86"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.40</span><span class="period">.</span>
-</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-86"><article class="problem example-like"><p id="p-321">Suppose that \(g\) is a function on \([a,b]\text{,}\) that \(g\) has a derivative at each point of \([a,b]\text{,}\) and that the function \(g'\) is itself continuous at each point in \([a,b]\text{.}\) Then show that \(\int_a^b g' = g(b)-g(a)\text{.}\)</p></article></div>
-<p id="p-322">These are the keys which made the efforts of Newton and Leibniz into the <em class="emphasis">calculus</em> — something one could calculate with. It is worth noting that this final theorem is true even if \(f'\) is just integrable — truly a great theorem.</p></section></div></main>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-86"><article class="problem example-like"><p id="p-322">Suppose that \(g\) is a function on \([a,b]\text{,}\) that \(g\) has a derivative at each point of \([a,b]\text{,}\) and that the function \(g'\) is itself continuous at each point in \([a,b]\text{.}\) Then show that \(\int_a^b g' = g(b)-g(a)\text{.}\)</p></article></div>
+<p id="p-323">These are the keys which made the efforts of Newton and Leibniz into the <em class="emphasis">calculus</em> — something one could calculate with. It is worth noting that this final theorem is true even if \(f'\) is just integrable — truly a great theorem.</p></section></div></main>
 </div>
 </body>
 </html>
