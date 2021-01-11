@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-01-11T12:45:26-06:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Point Sets and Sequences</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\newcommand{\co}[1]{\overline{#1}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="article-1.html"><span class="title">Introduction to Real Analysis</span></a></h1>
+<p class="byline">Mitchel T. Keller, Karl-Dieter Crisman, W. Ted Mahavier, W.S. Mahavier</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_prelim.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_continuity.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_prelim.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_continuity.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link"><a href="pref_keller.html" data-scroll="pref_keller"><span class="title">Preface</span></a></li>
+<li class="link"><a href="pref_KDC-ack.html" data-scroll="pref_KDC-ack"><span class="title">Acknowledgements (KDC)</span></a></li>
+<li class="link"><a href="pref_intro.html" data-scroll="pref_intro"><span class="title">Introduction</span></a></li>
+<li class="link">
+<a href="sec_prelim.html" data-scroll="sec_prelim"><span class="codenumber">1</span> <span class="title">Preliminaries and Review</span></a><ul>
+<li><a href="sec_prelim.html#subsection-1" data-scroll="subsection-1">Absolute Basics</a></li>
+<li><a href="sec_prelim.html#subsection-2" data-scroll="subsection-2">Logic Review</a></li>
+<li><a href="sec_prelim.html#subsection-3" data-scroll="subsection-3">Sets and Functions</a></li>
+<li><a href="sec_prelim.html#subsection-4" data-scroll="subsection-4">Order Properties of the Real Numbers</a></li>
+</ul>
+</li>
+<li class="link active"><a href="sec_sets.html" data-scroll="sec_sets"><span class="codenumber">2</span> <span class="title">Point Sets and Sequences</span></a></li>
+<li class="link"><a href="sec_continuity.html" data-scroll="sec_continuity"><span class="codenumber">3</span> <span class="title">Continuity</span></a></li>
+<li class="link"><a href="sec_differentiation.html" data-scroll="sec_differentiation"><span class="codenumber">4</span> <span class="title">Differentiation</span></a></li>
+<li class="link"><a href="sec_integration.html" data-scroll="sec_integration"><span class="codenumber">5</span> <span class="title">Integration</span></a></li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_sets"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">2</span> <span class="title">Point Sets and Sequences</span>
+</h2>
+<article class="definition definition-like" id="definition-5"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1</span><span class="period">.</span>
+</h6>
+<p id="p-95">A <dfn class="terminology">point</dfn> is simply an element of the real numbers \(\mathbb{R}\text{.}\)</p></article><article class="definition definition-like" id="definition-6"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2</span><span class="period">.</span>
+</h6>
+<p id="p-96">A <dfn class="terminology">point set</dfn> is a nonempty subset of the real numbers.</p></article><p id="p-97">You might well wonder why we need extra terms for these concepts. The reasons are mainly historical. Not only do these ideas undergird much more abstract ideas of sets, but in addition, there is a tradition worth preserving of “Moore method” courses using this terminology.</p>
+<p id="p-98">One of the interesting things about choosing to look at the whole real number line is that we have two additional useful axioms. They seem nearly trivial, but are <em class="emphasis">very</em> important.</p>
+<ul class="disc">
+<li id="li-19">
+<h6 class="heading"><span class="title">Point Set Axiom 1.</span></h6>
+<p id="p-99">– If \(p\) is a point, then there is a point less than \(p\) and a point greater than \(p\text{.}\)</p>
+</li>
+<li id="li-20">
+<h6 class="heading"><span class="title">Point Set Axiom 2.</span></h6>
+<p id="p-100">– If \(p\neq q\) are two points, there is a point between them.</p>
+</li>
+</ul>
+<p id="p-101">Note that these are closely related to the last few problems — but we are starting from scratch here, and you should treat these are the primary axioms we need for now.</p>
+<article class="example example-like" id="example-19"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-19"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-19"><article class="example example-like"><p id="p-102">Informally justify the Point Set Axioms above using things you know about real (or rational) numbers.</p></article></div>
+<article class="example example-like" id="example-20"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-20"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-20"><article class="example example-like"><p id="p-103">If instead of \(\mathbb{R}\) we chose as our ‘background set’ some subset \(C\) of \(\mathbb{R}\text{,}\) these axioms might not hold. We can see this with \(C=[0,1]\cup[2,3]\text{,}\) with \(p=0\) in the first case and \(p=1,q=2\) in the second.</p></article></div>
+<article class="definition definition-like" id="definition-7"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.5</span><span class="period">.</span>
+</h6>
+<p id="p-104">We say that a point set \(O\) is a (finite) <dfn class="terminology">open interval</dfn> if there are points \(a\neq b\) such that \(O\) is the point set consisting of all points between \(a\) and \(b\text{.}\) That is,</p>
+<div class="displaymath">
+\begin{equation*}
+O=\{x \,|\, a\lt x\lt b\}=(a,b)\,\text{.}
+\end{equation*}
+</div></article><article class="definition definition-like" id="definition-8"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.6</span><span class="period">.</span>
+</h6>
+<p id="p-105">We say that a point set \(I\) is a (finite) <dfn class="terminology">closed interval</dfn> if there are points \(a\neq b\) such that \(I\) is the point set consisting of \(a\text{,}\) \(b\text{,}\) and all points between \(a\) and \(b\text{.}\) That is,</p>
+<div class="displaymath">
+\begin{equation*}
+I=\{x \,| \,a\leq x\leq b\}=[a,b]\,\text{.}
+\end{equation*}
+</div></article><p id="p-106">In either case, \(a\) and \(b\) are called the <em class="emphasis">endpoints</em> of the interval.</p>
+<article class="example example-like" id="example-21"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-21"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.7</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-21"><article class="example example-like"><p id="p-107">Give some examples of point sets that are <em class="emphasis">not</em> intervals.</p></article></div>
+<article class="definition definition-like" id="definition-9"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.8</span><span class="period">.</span>
+</h6>
+<p id="p-108">If \(M\) is a point set, we say that \(p\) is an <dfn class="terminology">accumulation point of \(M\)</dfn> if <dfn class="terminology">every</dfn> open interval containing \(p\) also contains a point of \(M\) different from \(p\text{.}\)</p></article><p id="p-109">To word this in set notation, \(p\) is an accumulation point of \(M\) if, for every open interval \(O\) with \(p\in O\text{,}\) there is \(x\in O\) such that \(x\in M\setminus\{p\}\text{.}\)</p>
+<article class="problem example-like" id="problem-14"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-14"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.9</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-14"><article class="problem example-like"><p id="p-110">Show that if \(M\) is an open interval and \(p\in M\text{,}\) then \(p\) is an accumulation point of \(M\text{.}\)</p></article></div>
+<article class="problem example-like" id="problem-15"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-15"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.10</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-15"><article class="problem example-like"><p id="p-111">Show that if \(M\) is a closed interval and \(p\notin M\text{,}\) then \(p\) is not an accumulation point of \(M\text{.}\)</p></article></div>
+<article class="problem example-like" id="problem-16"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-16"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.11</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-16"><article class="problem example-like"><p id="p-112">Determine whether the endpoints of an open interval \(M\) are accumulation points of \(M\text{.}\)</p></article></div>
+<p id="p-113">It is worth exploring exactly how many points it is possible or impossible for \(M\) to have. The next two problems are just a start in investigating that.</p>
+<p id="p-114">In the next problem, you may wish to first show that \(M\) must have at least <em class="emphasis">one</em> point!</p>
+<article class="problem example-like" id="problem-17"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-17"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.12</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-17"><article class="problem example-like"><p id="p-115">Show that if \(M\) is a point set having an accumulation point, then \(M\) contains (at least) two points. Determine whether \(M\) must contain at least 3 points.</p></article></div>
+<article class="problem example-like" id="problem-18"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-18"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.13</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-18"><article class="problem example-like"><p id="p-116">Consider \(\mathbb{Z}\) as a point set; show that it has no accumulation points.</p></article></div>
+<p id="p-117">Both parts of this problem may be presented separately for credit.</p>
+<article class="problem example-like" id="problem-19"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-19"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.14</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-19"><article class="problem example-like"><p id="p-118">Given that \(H\) and \(K\) are point sets, show one of the following:</p>
+<ul class="disc">
+<li id="li-21"><p id="p-119">If \(p\) is an accumulation point of \(H\cap K\text{,}\) then \(p\) is an accumulation point of both \(H\) and \(K\text{.}\)</p></li>
+<li id="li-22"><p id="p-120">If \(p\) is an accumulation point of \(H\cup K\text{,}\) then \(p\) is an accumulation point of \(H\) or \(p\) is an accumulation point of \(K\text{.}\)</p></li>
+</ul></article></div>
+<article class="hiddenproof" id="proof-6"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-6"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-6"><article class="hiddenproof"><p id="p-121">The intersection one is just an exercise in the definitions. The union one is far more robustly approached via contrapositive, I think. Suppose \(p\) isn't an accumulation point of \(H\) or \(K\text{.}\) Then there is an interval around \(p\) that doesn't contain anything (else) in \(H\text{,}\) and another one that doesn't contain anything (else) in \(K\text{.}\) So take the intersection of these intervals — clearly nothing in \(H\) or \(K\) is in that interval, hence it can't be an accumulation point of their union either.</p></article></div>
+<article class="problem example-like" id="problem-20"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-20"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.15</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-20"><article class="problem example-like"><p id="p-122">If \(M\) is the set of all reciprocals of elements of \(\mathbb{N}\text{,}\) then zero is an accumulation point of \(M\text{.}\)</p></article></div>
+<p id="p-123">We will next start to turn to connecting the concepts of point sets to more familiar ones from calculus, beginning with sequences.</p>
+<article class="definition definition-like" id="definition-10"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.16</span><span class="period">.</span>
+</h6>
+<p id="p-124">A <dfn class="terminology">sequence</dfn> is a function from \(\mathbb{N}\) to \(\mathbb{R}\text{.}\)</p></article><p id="p-125">Sometimes these are called <em class="emphasis">point sequences</em> to distinguish them from other potential sequences.</p>
+<p id="p-126">Even though technically the sequence is a function \(a\text{,}\) for any given \(i\in \mathbb{N}\) we will write \(a_i=a(i)\text{.}\) Then we may write a sequence \(a(1),a(2),a(3),\cdots\) as \(a_1,a_2,a_3,\cdots\) — or, more formally, \(\{a_i\}_{i=1}^\infty\text{.}\) In order to keep the index visible (this is especially useful when we combine sequences), we will occasionally abuse notation slightly and write \(\{a_i\}_{i=1}^\infty\) when referring to the function <em class="emphasis">or</em> the image set \(\{a(i) \mid i\in \mathbb{N}\}\text{.}\)</p>
+<article class="example example-like" id="example-22"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-22"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.17</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-22"><article class="example example-like"><p id="p-127">Write down several sequences \(a\) you are familiar with. If possible, give a general formula for each \(a_i\) in terms of \(i\text{.}\)</p></article></div>
+<article class="example example-like" id="example-23"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-23"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.18</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-23"><article class="example example-like"><p id="p-128">Give an example where the image set of a sequence \(\{a_i\}_{i=1}^\infty\) is finite.</p></article></div>
+<p id="p-129">There is a deep connection between sequences and accumulation points, which the next few problems will elucidate. First, a definition — one you may have seen in calculus in a different form.</p>
+<article class="definition definition-like" id="definition-11"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.19</span><span class="period">.</span>
+</h6>
+<p id="p-130">We say that the (point) sequence \(p=\{p_i\}_{i=1}^\infty\) <dfn class="terminology">converges to the point \(x\)</dfn> if, given any open interval \(S\) containing \(x\text{,}\) there exists an \(N\in \mathbb{N}\) such that if \(n\geq N\) is also a positive integer then \(p_n\in S\text{.}\)</p></article><p id="p-131">We simply say that \(p\) converges if there exists a point \(x\) to which the sequence converges. One could even write \(p\to x\text{,}\) informally. If a sequence does not converge to <em class="emphasis">any</em> point \(x\text{,}\) then we say it <em class="emphasis">diverges</em>.</p>
+<p id="p-132">The first problem about this should be used as a place to test ideas for how to prove convergence. Make sure you remember <em class="emphasis">all</em> the axioms you've learned and facts you've proved about real numbers — you may need them!</p>
+<article class="problem example-like" id="problem-21"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-21"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.20</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-21"><article class="problem example-like"><p id="p-133">Consider the sequence given by \(p_n = \frac{1}{n}\) (remember, \(n\in\mathbb{N}\) is part of the definition of a sequence). Show that \(p=\{p_i\}_{i=1}^\infty\) converges to \(0\text{.}\)</p></article></div>
+<article class="example example-like" id="example-24"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-24"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.21</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-24"><article class="example example-like"><p id="p-134">Before tackling any of the next few problems, try actually writing down the first 10 or 12 elements of each sequence.</p></article></div>
+<article class="problem example-like" id="problem-22"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-22"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.22</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-22"><article class="problem example-like"><p id="p-135">Consider the sequence given by \(p_n = 1-\frac{1}{n}\text{.}\) Show that \(p\) converges to \(1\text{.}\)</p></article></div>
+<article class="problem example-like" id="problem-23"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-23"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.23</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-23"><article class="problem example-like"><p id="p-136">Consider the sequence with even terms \(p_{2k}=\frac{1}{2k-1}\) and odd terms \(p_{2k-1}=\frac{1}{2k}\text{.}\) Show that \(p\) converges to \(0\text{.}\)</p></article></div>
+<article class="problem example-like" id="problem-24"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-24"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.24</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-24"><article class="problem example-like"><p id="p-137">Consider the sequence with odd terms \(p_{2k-1}=\frac{1}{2k-1}\) and even terms \(p_{2k}=1+\frac{1}{2k}\text{.}\) Determine whether \(p\) converges to \(0\text{.}\)</p></article></div>
+<article class="problem example-like" id="problem-25"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-25"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.25</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-25"><article class="problem example-like"><p id="p-138">Consider the sequence given by \(p_{2k} = \frac{1}{2k}\) and \(p_{2k-1}=-\frac{1}{2n-1}\text{.}\) Show that \(p\) converges to \(0\text{.}\)</p></article></div>
+<p id="p-139">The following problem connects our two concepts. The most profound property of the real numbers is part of this connection, as we'll soon see.</p>
+<article class="problem example-like" id="problem-26"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-26"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.26</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-26"><article class="problem example-like"><p id="p-140">Show that if \(p\) converges to the point \(x\) <em class="emphasis">and</em> for each \(i\in \mathbb{N}\text{,}\) \(p_i\neq p_{i+1}\text{,}\) then \(x\) is an accumulation point of the image set of \(\{p_i\}_{i=1}^\infty\text{.}\)</p></article></div>
+<article class="example example-like" id="example-25"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-25"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.27</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-25"><article class="example example-like"><p id="p-141">Why do we need the restriction that \(p_i\neq p_{i+1}\text{?}\) Is this an absolutely necessary restriction for \(x\) to be an acc. pt. of the image set?</p></article></div>
+<article class="problem example-like" id="problem-27"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-27"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.28</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-27"><article class="problem example-like"><p id="p-142">Show that the sequence \(\{\frac{1}{i}\}_{i=1}^\infty\) does not converge to a point other than zero.</p></article></div>
+<article class="problem example-like" id="problem-28"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-28"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.29</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-28"><article class="problem example-like"><p id="p-143">Show that if \(p\) converges to the point \(x\) and \(y\) is a point different from \(x\text{,}\) then \(p\) does <em class="emphasis">not</em> converge to \(y\text{.}\)</p></article></div>
+<article class="hiddenproof" id="proof-7"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-7"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-7"><article class="hiddenproof"><p id="p-144">Take the point between \(x\) and \(y\) that Point Set Axiom 2 guarantees, and form an open interval between it and something else, containing \(x\) and not \(y\text{.}\) Then after some \(N\) all terms of the sequence are in this interval. Now find an interval starting at that point and containing \(y\) and not \(x\text{.}\) There is definitely no \(M\) with everything after that in it, since there is a point past which <em class="emphasis">nothing</em> is in it!</p></article></div>
+<p id="p-145">Basic familiar facts about sequence convergence are recalled next. In these proofs, you may have to think a little more explicitly about what the intervals around \(x\) look like in order to combine sequences. Try doing some examples with explicit numbers first, to get a sense of how to approach them.</p>
+<article class="problem example-like" id="problem-29"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-29"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.30</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-29"><article class="problem example-like"><p id="p-146">Show that if \(c\) is a number and \(p=\{p_i\}_{i=1}^\infty\) converges to \(x\text{,}\) then \(cp\) (which means what you think it does) converges to \(cx\text{.}\)</p></article></div>
+<article class="hiddenproof" id="proof-8"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-8"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-8"><article class="hiddenproof"><p id="p-147">This is overall pretty easy — you just take the interval \(a\lt b\) you want, and then divide to look at \(a/c\lt x\lt b/c\) which the original convergence guarantees works. But watch out for \(c\lt 0\) and \(c=0\) cases!</p></article></div>
+<article class="problem example-like" id="problem-30"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-30"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.31</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-30"><article class="problem example-like"><p id="p-148">Show that if \(q=\{q_i\}_{i=1}^\infty\) converges to \(y\) and \(p=\{p_i\}_{i=1}^\infty\) converges to \(x\text{,}\) then \(\{q_i+p_i\}_{i=1}^\infty\) (which means what you think it does) converges to \(y+x\text{.}\)</p></article></div>
+<article class="hiddenproof" id="proof-9"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-9"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-9"><article class="hiddenproof"><p id="p-149">Pick an interval around \(y+x\text{,}\) say \(a\lt b\text{.}\) The goal is to break this up into pieces \(a=a'+a''\) and \(b=b'+b''\) such that \(a'\lt y\lt b'\) and \(a''\lt x\lt b''\text{,}\) and then use that there is an \(M'\) and \(M''\) such that everything is in them, so that the bigger of these numbers guarantee that the sums will be in the original interval. So it becomes a game of inequalities, and usually looking at \(((y+x)-a)/2\) as the distance on the left to have is the thing you want. But tricky because I don't have this as a prereq.</p></article></div>
+<p id="p-150">Products and quotients of sequences behave like you think they will as well, and you can use these facts in the rest of the notes. We will include one special case soon.</p>
+<p id="p-151">Here are two useful facts people proved in class, which you can use from now on.</p>
+<ul class="disc"><li id="li-23">
+<h6 class="heading"><span class="title">Jacob's Observation (JO1):.</span></h6>
+<p id="p-152">If \(0\lt x\text{,}\) then \(0\lt 1/x\text{.}\)</p>
+</li></ul>
+<ul class="disc"><li id="li-24">
+<h6 class="heading"><span class="title">Julianne's Observation (JO2):.</span></h6>
+<p id="p-153">If \(0\lt x\lt y\text{,}\) then \(0\lt 1/y\lt 1/x\text{.}\)</p>
+</li></ul>
+<p id="p-154">Now we introduce a few more definitions that will lead us to the key axiom for the real numbers — <em class="emphasis">completeness</em>. We'll continue to see interplay between sequences and sets.</p>
+<article class="definition definition-like" id="definition-12"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.32</span><span class="period">.</span>
+</h6>
+<p id="p-155">We say that a point set \(M\) is <dfn class="terminology">bounded</dfn> if \(M\) is a subset of some closed interval.</p></article><article class="definition definition-like" id="definition-13"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.33</span><span class="period">.</span>
+</h6>
+<p id="p-156">We say that a point set \(M\) is <dfn class="terminology">bounded above</dfn> if there is a point \(z\) such that if \(x\in M\) then \(x\leq z\text{;}\) such a point is an <dfn class="terminology">upper bound</dfn>.</p></article><article class="example example-like" id="example-26"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-26"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.34</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-26"><article class="example example-like"><p id="p-157">The property of a point set \(M\) being <em class="emphasis">bounded below</em> and the notion of a <em class="emphasis">lower bound</em> are defined similarly; try defining them.</p></article></div>
+<article class="example example-like" id="example-27"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-27"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.35</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-27"><article class="example example-like"><p id="p-158">Show that a point set (in \(\mathbb{R}\)) being bounded is the same as it being bounded above and below.</p></article></div>
+<article class="example example-like" id="example-28"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-28"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.36</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-28"><article class="example example-like"><p id="p-159">Find all upper bounds for \((0,1)\text{,}\) \([0,1]\text{,}\) and \((0,1)\cap \mathbb{Q}^{C}\) (irrationals between 0 and 1).</p></article></div>
+<p id="p-160">In the next problem, remember that we ‘abuse notation’ by using \(\{p_i\}_{i=1}^\infty\) to mean more than one mathematical object.</p>
+<article class="problem example-like" id="problem-31"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-31"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.37</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-31"><article class="problem example-like"><p id="p-161">If the sequence \(p\) converges to the point \(x\text{,}\) then the image set \(\{p_i\}_{i=1}^\infty\) is bounded.</p></article></div>
+<p id="p-162">You can use this concept to prove some of the more difficult sequence convergence properties.</p>
+<article class="problem example-like" id="problem-32"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-32"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.38</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-32"><article class="problem example-like"><p id="p-163">Show that if \(q\) converges to \(0\) and \(p\) converges to \(x\text{,}\) then</p>
+<p id="p-164">\(\{q_i\cdot p_i\}_{i=1}^\infty\) (which means what you think it does) converges to \(0\text{.}\)</p></article></div>
+<article class="hiddenproof" id="proof-10"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-10"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-10"><article class="hiddenproof"><p id="p-165">This is one I should really know how to do. But I don't. Ah, it needs to use <em class="emphasis">boundedness</em> in a very direct way (same for general product).</p></article></div>
+<p id="p-166">Now we start to approach the heart of why calculus works.</p>
+<article class="definition definition-like" id="definition-14"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.39</span><span class="period">.</span>
+</h6>
+<p id="p-167">We say \(p\) is a <dfn class="terminology">least upper bound</dfn> (or <dfn class="terminology">supremum</dfn>) of \(M\) if \(p\) is an upper bound of \(M\) and \(p\leq q\) for any other upper bound \(q\) of \(M\text{.}\)</p></article><article class="example example-like" id="example-29"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-29"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.40</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-29"><article class="example example-like"><p id="p-168">Define the <em class="emphasis">greatest lower bound</em>/<em class="emphasis">infimum</em> by analogy.</p></article></div>
+<article class="problem example-like" id="problem-33"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-33"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.41</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-33"><article class="problem example-like"><p id="p-169">Find the suprema of \((0,1)\text{,}\) and \((0,1)\cap \mathbb{Q}^{C}\text{.}\) If we could apply the definition of supremum to \(\emptyset\text{,}\) what would its supremum be?</p></article></div>
+<article class="problem example-like" id="problem-34"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-34"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.42</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-34"><article class="problem example-like"><p id="p-170">Prove that the supremum of a point set is unique, if it exists.</p></article></div>
+<article class="problem example-like" id="problem-35"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-35"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.43</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-35"><article class="problem example-like"><p id="p-171">If \(M\) and \(N\) are point sets with suprema, characterize the supremum of \(M\cup N\text{.}\)</p></article></div>
+<p id="p-172">If \(M\) and \(N\) are point sets, define \(cM\) to be \(\{cx | x\in M\}\) and \(M+N=\{x+y|x\in M, y\in N\}\text{.}\)</p>
+<article class="problem example-like" id="problem-36"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-36"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.44</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-36"><article class="problem example-like"><p id="p-173">Assuming \(M\) and \(N\) have suprema, prove <em class="emphasis">either</em> that \(\sup(cM)\) is \(c\sup(M)\) (given \(c&gt;0\)) <em class="emphasis">or</em> that \(\sup(M+N)=\sup(M)+\sup(N)\text{.}\)</p></article></div>
+<article class="hiddenproof" id="proof-11"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-11"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-11"><article class="hiddenproof"><p id="p-174">These are kind of important, actually.</p></article></div>
+<article class="example example-like" id="example-30"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-30"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.45</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-30"><article class="example example-like"><p id="p-175">Show that \(c\inf(M) = \sup(cM)\) if \(c\lt 0\text{.}\) What other properties are there relating \(\inf\text{,}\) \(\sup\text{,}\) and \(c\text{?}\)</p></article></div>
+<p id="p-176">The reason the supremum is so important is this fundamental axiom:</p>
+<p id="p-177"><em class="emphasis">Axiom — Completeness of the Real Numbers</em>: If \(M\) is a point set and is bounded above, then \(M\) has a supremum.</p>
+<article class="example example-like" id="example-31"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-31"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.46</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-31"><article class="example example-like"><p id="p-178">Come up with a sequence \(p\) such that the image set is unbounded \(\{p_i\}_{i=1}^\infty\) and hence does not have a supremum.</p></article></div>
+<article class="example example-like" id="example-32"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-32"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.47</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-32"><article class="example example-like"><p id="p-179">Show that the axiom is <em class="emphasis">not</em> true if one requires that the supremum be a rational number.</p></article></div>
+<p id="p-180">The next problem is an equivalent ‘sequence definition’ formulation of completeness of the real numbers.</p>
+<article class="definition definition-like" id="definition-15"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.48</span><span class="period">.</span>
+</h6>
+<p id="p-181">We say that a sequence \(p\) is <dfn class="terminology">nondecreasing</dfn> if \(p_i\leq p_{i+1}\) for all \(i\in \mathbb{N}\text{.}\) (The concept of nonincreasing is defined similarly.)</p></article><article class="example example-like" id="example-33"><a data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-33"><h6 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.49</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-33"><article class="example example-like"><p id="p-182">Replace the \(\leq\) above with \(\lt\) to define the notion of (strictly) <em class="emphasis">increasing</em>. Find examples of nondecreasing sequences which are not increasing (and similarly for nonincreasing/decreasing).</p></article></div>
+<article class="problem example-like" id="problem-37"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-37"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.50</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-37"><article class="problem example-like"><p id="p-183">If \(p\) is a nondecreasing sequence such that the image set \(\{p_i\}_{i=1}^\infty\) is bounded above, then \(p\) converges to some point \(x\text{.}\)</p></article></div>
+<article class="problem example-like" id="problem-38"><a data-knowl="" class="id-ref problem-knowl original" data-refid="hk-problem-38"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.51</span><span class="period">.</span>
+</h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-problem-38"><article class="problem example-like"><p id="p-184">Assume the previous problem is true; use it to prove the completeness axiom for point sets.</p></article></div>
+<p id="p-185">Why is all this so important? One reason is that we can use the completeness of the reals to <em class="emphasis">prove</em> the ‘Archimedean’ order axiom. There are also many famous properties of sequences which it allows us to prove, but we will have to skip these in order to start tackling more familiar concepts from calculus, which we do next.</p></section></div></main>
+</div>
+</body>
+</html>
