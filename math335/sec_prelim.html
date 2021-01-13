@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-11T18:09:21-06:00       *-->
+<!--*       on 2021-01-13T12:28:04-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -58,6 +58,12 @@ MathJax.Hub.Config({
 </head>
 <body class="mathbook-article has-toc has-sidebar-left">
 <a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\newcommand{\co}[1]{\overline{#1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\irrat}{\mathbb{Q}^C}
+\newcommand{\empset}{\{\}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -70,10 +76,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="pref_intro.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_sets.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="pref_intro.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="pref_intro.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_sets.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="pref_intro.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -84,19 +90,18 @@ MathJax.Hub.Config({
 <li class="link"><a href="pref_intro.html" data-scroll="pref_intro"><span class="title">Introduction</span></a></li>
 <li class="link active">
 <a href="sec_prelim.html" data-scroll="sec_prelim"><span class="codenumber">1</span> <span class="title">Preliminaries and Review</span></a><ul>
-<li><a href="sec_prelim.html#subsection-1" data-scroll="subsection-1">Absolute Basics</a></li>
+<li><a href="sec_prelim.html#ss-absolute-basics" data-scroll="ss-absolute-basics">Absolute Basics</a></li>
 <li><a href="sec_prelim.html#subsection-2" data-scroll="subsection-2">Logic Review</a></li>
 <li><a href="sec_prelim.html#subsection-3" data-scroll="subsection-3">Sets and Functions</a></li>
 <li><a href="sec_prelim.html#subsection-4" data-scroll="subsection-4">Order Properties of the Real Numbers</a></li>
 </ul>
 </li>
-<li class="link"><a href="sec_sets.html" data-scroll="sec_sets"><span class="codenumber">2</span> <span class="title">Point Sets and Sequences</span></a></li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_prelim"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">1</span> <span class="title">Preliminaries and Review</span>
 </h2>
-<section class="introduction" id="introduction-1"><p id="p-10">In these notes, we do assume certain background knowledge. This section is intended to review some of this, as well as to focus on specific items which may prove of use later.</p></section><section class="subsection" id="subsection-1"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-1"><p id="p-10">In these notes, we do assume certain background knowledge. This section is intended to review some of this, as well as to focus on specific items which may prove of use later.</p></section><section class="subsection" id="ss-absolute-basics"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.1</span> <span class="title">Absolute Basics</span>
 </h3>
 <p id="p-11">There are some things I will not expand on at all.</p>
@@ -131,13 +136,13 @@ MathJax.Hub.Config({
 \text{ If } Q\text{ is not true, then } P\text{ is also not true }\text{.}
 \end{equation*}
 </div>
-<article class="example example-like" id="example-1"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2</span><span class="period">.</span>
+<article class="exercise exercise-like" id="exercise-2"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.2</span><span class="period">.</span>
 </h6>
 <p id="p-22">State the converse of the previous example, and then <em class="emphasis">its</em> contrapositive. Prove that final statement.</p></article><p id="p-24">In (normal) mathematical logic, we say that the contrapositive and the original statement are <em class="emphasis">logically equivalent</em>. So you should use whichever one you find useful in proving theorems!</p>
 <p id="p-25">However, that isn't the case with the converse and the original statement.</p>
-<article class="example example-like" id="example-2"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3</span><span class="period">.</span>
+<article class="exercise exercise-like" id="exercise-3"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.3</span><span class="period">.</span>
 </h6>
 <p id="p-26">Take the statement “If \(n\) is a prime number, then \(n\) is a positive integer” and give a reason why it is true, but its converse is false.</p></article><p id="p-27">In the first two examples, we have the highly unusual situation where both \(P\implies Q\) and \(Q\implies P\) are both true. We say that this is a <em class="emphasis">biconditional</em> statement and write \(P\iff Q\text{,}\) saying</p>
 <div class="displaymath">
@@ -153,25 +158,24 @@ P\text{ is true if and only if } Q\text{ is true }\text{,}
 \end{equation*}
 </div>
 <p data-braille="continuation">since even if \(x\) and \(y\) were both even, \(xy\) would still be even.</p>
-<article class="example example-like" id="example-3"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.4</span><span class="period">.</span>
+<article class="exercise exercise-like" id="exercise-4"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.4</span><span class="period">.</span>
 </h6>
 <p id="p-29">Come up with a theorem which is <em class="emphasis">not</em> true with this meaning of ‘or’ but <em class="emphasis">is</em> true with the so-called <em class="emphasis">exclusive or</em>.</p></article><p id="p-30">The other remaining tricky issue is that of quantifiers — things like “for all” and “there exists”. This is best tackled by trying it.</p>
-<article class="example example-like" id="example-4"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5</span><span class="period">.</span>
+<article class="exercise exercise-like" id="exercise-5"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.5</span><span class="period">.</span>
 </h6>
-<p id="p-31">Restate these as accurately as possible in terms of logic, and then do all of the following with as few double negatives as possible, using natural negations if possible:</p></article><ul class="disc">
-<li id="li-6"><p id="p-32">Negate the statement, “All Gordon professors who live in Wenham are old and grey.”</p></li>
-<li id="li-7"><p id="p-33">Negate the statement, “There exists a Gordon student who does not live in Wenham,” in the most natural way possible (i.e., without double negatives).</p></li>
-<li id="li-8"><p id="p-34">Give the contrapositive of the statement, “If there exists a Gordon professor who is neither old nor grey, then all Gordon students are young and bald.”</p></li>
-</ul>
-<article class="problem example-like" id="problem-1"><h6 class="heading">
-<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.6</span><span class="period">.</span>
+<div class="introduction" id="introduction-2"><p id="p-31">Restate these as accurately as possible in terms of logic, and then do all of the following with as few double negatives as possible, using natural negations if possible:</p></div>
+<article class="task exercise-like" id="task-1"><h6 class="heading"><span class="codenumber">(a)</span></h6>
+<p id="p-32">Negate the statement, “All Morningside professors who live on the Northside are old and grey.”</p></article><article class="task exercise-like" id="task-2"><h6 class="heading"><span class="codenumber">(b)</span></h6>
+<p id="p-33">Negate the statement, “There exists a Morningside student who does not live in Sioux City,” in the most natural way possible (i.e., without double negatives).</p></article><article class="task exercise-like" id="task-3"><h6 class="heading"><span class="codenumber">(c)</span></h6>
+<p id="p-34">Give the contrapositive of the statement, “If there exists a Morningside professor who is neither old nor grey, then all Morningside students are young and bald.”</p></article></article><article class="exercise exercise-like" id="exercise-6"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.6</span><span class="period">.</span>
 </h6>
 <p id="p-35">Formally negate the statement, “For every positive number \(p\text{,}\) there is a positive integer \(N\) such that if an integer \(I\) is greater than \(N\text{,}\) then the reciprocal of \(I\) is less than \(p\text{,}\)” with as few negatives and as naturally as possible. (But don't try to prove it!)</p></article></section><section class="subsection" id="subsection-3"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.3</span> <span class="title">Sets and Functions</span>
 </h3>
-<p id="p-36">Recall that \(A\) is a <em class="emphasis">subset</em> of \(B\) (written \(A\subset B\)) if every element \(x\in A\) is also an element of \(B\text{.}\) When a set is defined as a subset of another set with a given property, we often use “set builder” notation, such as</p>
+<p id="p-36">Recall that \(A\) is a <dfn class="terminology">subset</dfn> of \(B\) (written \(A\subseteq B\) or \(A\subset B\)) if every element \(x\in A\) implies \(x\in B\text{.}\) That is, every element of \(A\) is also an element of \(B\text{.}\) When a set is defined as a subset of another set with a given property, we often use “set builder” notation, such as</p>
 <div class="displaymath">
 \begin{equation*}
 \{n\in \mathbb{Z} \mid 2\text{ divides } n\}
@@ -183,32 +187,32 @@ P\text{ is true if and only if } Q\text{ is true }\text{,}
 \{P\text{ is a president of the USA before 2018 }  \mid P\text{ is female } \}\text{,}
 \end{equation*}
 </div>
-<p data-braille="continuation">we call it the empty set (\(\emptyset\)). The familiar intersection (\(\cap\)) and union (\(\cup\)) operators are very useful. We distinguish between \(\subset\) and \(\subsetneq\text{,}\) where in the latter the sets are not equal. Finally, we define \(A\setminus B\) to be the set of all elements in \(A\) which are <em class="emphasis">not</em> in \(B\text{.}\)</p>
-<article class="example example-like" id="example-5"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.7</span><span class="period">.</span>
+<p data-braille="continuation">we call it the empty set (\(\empset\) or \(\empset\)). The familiar intersection (\(\cap\)) and union (\(\cup\)) operators are very useful. We distinguish between \(\subseteq\) and \(\subsetneq\text{,}\) where in the latter the sets are not equal. Finally, we define \(A\setminus B\) to be the set of all elements in \(A\) which are <em class="emphasis">not</em> in \(B\text{.}\)</p>
+<article class="exercise exercise-like" id="exercise-7"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.7</span><span class="period">.</span>
 </h6>
-<p id="p-37">Prove that \(\mathbb{Z}\subset \mathbb{Q}\text{.}\)</p></article><article class="example example-like" id="example-6"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8</span><span class="period">.</span>
+<p id="p-37">Prove that \(\mathbb{Z}\subseteq \mathbb{Q}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-8"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.8</span><span class="period">.</span>
 </h6>
-<p id="p-38">Decide whether \(\mathbb{N}\cup \{-n\,|\,n\in \mathbb{N}\}=\mathbb{Z}\text{.}\)</p></article><article class="example example-like" id="example-7"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.9</span><span class="period">.</span>
+<p id="p-38">Decide whether \(\mathbb{N}\cup \{-n\,|\,n\in \mathbb{N}\}=\mathbb{Z}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-9"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.9</span><span class="period">.</span>
 </h6>
-<p id="p-39">Find three nonempty sets \(A,B,C\) such that \(A\cap B=\emptyset\text{,}\) \(B\in C\text{,}\) and \(A\notin C\text{.}\)</p></article><article class="example example-like" id="example-8"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.10</span><span class="period">.</span>
+<p id="p-39">Find three nonempty sets \(A,B,C\) such that \(A\cap B=\empset\text{,}\) \(B\in C\text{,}\) and \(A\notin C\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-10"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.10</span><span class="period">.</span>
 </h6>
-<p id="p-40">Give an example where \(A\neq B\) but \(A\setminus B=\emptyset\text{.}\)</p></article><p id="p-41">More interestingly, we can define infinite combinations of these things, if we have a collection of sets \(X_\alpha\text{,}\) one for each element \(\alpha\in A\) an infinite set.</p>
-<article class="problem example-like" id="problem-2"><h6 class="heading">
+<p id="p-40">Give an example where \(A\neq B\) but \(A\setminus B=\empset\text{.}\)</p></article><p id="p-41">More interestingly, we can define infinite combinations of these things, if we have a collection of sets \(X_\alpha\text{,}\) one for each element \(\alpha\in A\) an infinite set.</p>
+<article class="problem example-like" id="problem-1"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.11</span><span class="period">.</span>
 </h6>
-<p id="p-42">Find (nonempty) sets \(S_i\subset \mathbb{N}\) indexed by \(i\in \mathbb{N}\) such that \(S_{i+1}\subsetneq S_i\) and</p>
+<p id="p-42">Find (nonempty) sets \(S_i\subseteq \mathbb{N}\) indexed by \(i\in \mathbb{N}\) such that \(S_{i+1}\subsetneq S_i\) and</p>
 <div class="displaymath">
 \begin{equation*}
-\bigcap_{i=1}^{\infty} S_i=\emptyset\,\text{.}
+\bigcap_{i=1}^{\infty} S_i=\empset\,\text{.}
 \end{equation*}
-</div></article><article class="problem example-like" id="problem-3"><h6 class="heading">
+</div></article><article class="problem example-like" id="problem-2"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.12</span><span class="period">.</span>
 </h6>
-<p id="p-43">Find (nonempty) sets \(S_i\subset \mathbb{N}\) indexed by \(i\in \mathbb{N}\) such that \(S_i\subsetneq S_{i+1}\) but</p>
+<p id="p-43">Find (nonempty) sets \(S_i\subseteq \mathbb{N}\) indexed by \(i\in \mathbb{N}\) such that \(S_i\subsetneq S_{i+1}\) but</p>
 <div class="displaymath">
 \begin{equation*}
 \bigcup_{i=1}^\infty S_i\neq \mathbb{N} \,\text{.}
@@ -217,54 +221,61 @@ P\text{ is true if and only if } Q\text{ is true }\text{,}
 <article class="definition definition-like" id="definition-1"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.13</span><span class="period">.</span>
 </h6>
-<p id="p-45">A <dfn class="terminology">function</dfn> from a set \(A\) to a set \(B\) is a subset of the Cartesian product \(A\times B\) such that there is precisely one \((a,b)\in f\) for each \(a\in A\text{.}\) We call \(A\) the <dfn class="terminology">domain</dfn>, and say that \(f(a)=b\) if \((a,b)\in f\text{.}\) There is no standard name for \(B\text{,}\) but if you insist on having one, use <dfn class="terminology">codomain</dfn>.</p></article><article class="example example-like" id="example-9"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.14</span><span class="period">.</span>
+<p id="p-45">A <dfn class="terminology">function</dfn> from a set \(A\) to a set \(B\) is a subset of the Cartesian product \(A\times B\) such that for each \(a\in A\) there exists a unique \(b\in B\) such that \((a,b)\in f\text{.}\) We call \(A\) the <dfn class="terminology">domain</dfn> of \(f\text{,}\) and say that \(f(a)=b\) if \((a,b)\in f\text{.}\) We call \(B\text{,}\) the <dfn class="terminology">codomain</dfn> of \(f\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-11"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.14</span><span class="period">.</span>
 </h6>
-<p id="p-46">Write some function from \(\mathbb{Z}\) to itself this way.</p></article><p id="p-47">Recall a few properties functions might have.</p>
+<p id="p-46">Write some function from \(\mathbb{Z}\) to itself as a set of ordered pairs.</p></article><article class="definition definition-like" id="defn-fn-props"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.15</span><span class="period">.</span>
+</h6>
+<p id="p-47">Recall a few properties functions might have:</p>
 <ul class="disc">
-<li id="li-9"><p id="p-48">A function from \(A\) to \(B\) is <em class="emphasis">onto</em> if, for each \(b\in B\text{,}\) there is an \(a\in A\) such that \(f(a)=b\text{.}\)</p></li>
-<li id="li-10"><p id="p-49">A function from \(A\) to \(B\) is <em class="emphasis">one-to-one</em> if when \(a\neq a' \in A\text{,}\) then \(f(a)\neq f(a')\in B\text{.}\)</p></li>
-<li id="li-11"><p id="p-50">A function from \(A\) to \(B\) is a <em class="emphasis">bijection</em> if it is one-to-one and onto.</p></li>
-</ul>
-<article class="example example-like" id="example-10"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.15</span><span class="period">.</span>
+<li id="li-6"><p id="p-48">A function from \(A\) to \(B\) is <dfn class="terminology">onto</dfn> if, for each \(b\in B\text{,}\) there is an \(a\in A\) such that \(f(a)=b\text{.}\)</p></li>
+<li id="li-7"><p id="p-49">A function from \(A\) to \(B\) is <dfn class="terminology">one-to-one</dfn> if for each \(b\in B\) there exists at most one \(a\in
+A\) such that \(f(a)=b\text{.}\)</p></li>
+<li id="li-8"><p id="p-50">A function from \(A\) to \(B\) is a <dfn class="terminology">bijection</dfn> if it is one-to-one and onto.</p></li>
+</ul></article><p id="p-51">A function that is onto is sometimes called a <dfn class="terminology">surjection</dfn> or said to be <dfn class="terminology">surjective</dfn>, while a one-to-one function is sometimes called an <dfn class="terminology">injection</dfn> or said to be <dfn class="terminology">injective</dfn>. Another name for a bijection is a <dfn class="terminology">one-to-one correspondence</dfn>. These notes will generally use the terms given in <a class="xref" data-knowl="./knowl/defn-fn-props.html" title="Definition 1.15">Definition 1.15</a>, but it is helpful to be familiar with multiple ways to express the same idea.</p>
+<article class="problem example-like" id="problem-3"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.16</span><span class="period">.</span>
 </h6>
-<p id="p-51">Suppose that \(f(x)=x^2\text{,}\) where \(A=B=\mathbb{Z}\text{.}\) Change \(A\) or \(B\) so that it is one-to-one. Find a way to change it to be onto.</p></article><article class="example example-like" id="example-11"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.16</span><span class="period">.</span>
+<p id="p-52">Let \(f\colon A\to B\text{,}\) where \(A\) and \(B\) are sets. Prove that \(f\) is one-to-one if and only if \(f(a_1)=f(a_2)\) implies \(a_1 = a_2\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-12"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.17</span><span class="period">.</span>
 </h6>
-<p id="p-52">Find a bijection from \(\mathbb{Z}\) to itself that is <em class="emphasis">not</em> the identity. If you remember what an inverse function is, find that, too.</p></article><p id="p-53">There are two more important sets relevant to a given function.</p>
-<article class="definition definition-like" id="definition-2"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.17</span><span class="period">.</span>
+<p id="p-53">Suppose that \(f(x)=x^2\text{,}\) where \(A=B=\mathbb{Z}\text{.}\) Change \(A\) or \(B\) so that it is one-to-one. Find a way to change it to be onto.</p></article><article class="exercise exercise-like" id="exercise-13"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.18</span><span class="period">.</span>
 </h6>
-<p id="p-54">Let \(f:A\to B\) be a function.</p>
+<p id="p-54">Find a bijection from \(\mathbb{Z}\) to itself that is <em class="emphasis">not</em> the identity. If you remember what an inverse function is, find that, too.</p></article><p id="p-55">There are two more important sets relevant to a given function.</p>
+<article class="definition definition-like" id="definition-3"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.19</span><span class="period">.</span>
+</h6>
+<p id="p-56">Let \(f:A\to B\) be a function.</p>
 <ul class="disc">
-<li id="li-12">
-<p id="p-55">If \(S\subset A\text{,}\) we call the <em class="emphasis">image</em> of \(S\) under \(f\text{,}\) denoted \(f(S)\text{,}\) the set</p>
+<li id="li-9">
+<p id="p-57">If \(S\subseteq A\text{,}\) we call the <em class="emphasis">image</em> of \(S\) under \(f\text{,}\) denoted \(f(S)\text{,}\) the set</p>
 <div class="displaymath">
 \begin{equation*}
 \{f(x) \mid  x\in S\}\,\text{.}
 \end{equation*}
 </div>
 </li>
-<li id="li-13">
-<p id="p-56">If \(T\subset B\text{,}\) we call the <em class="emphasis">preimage</em> of \(T\) under \(f\text{,}\) denoted \(f^{-1}(T)\text{,}\) the set</p>
+<li id="li-10">
+<p id="p-58">If \(T\subseteq B\text{,}\) we call the <em class="emphasis">preimage</em> of \(T\) under \(f\text{,}\) denoted \(f^{-1}(T)\text{,}\) the set</p>
 <div class="displaymath">
 \begin{equation*}
 \{x\in A \mid  f(x)\in T\}\,\text{.}
 \end{equation*}
 </div>
 </li>
-</ul></article><p id="p-57">Notice that the preimage exists whether or not the inverse function exists (and the notation \(f^{-1}\) refers only to the preimage in this course). We call the image of the entire domain the <em class="emphasis">image of the function</em>, \(f(A)\text{.}\)</p>
-<article class="example example-like" id="example-12"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.18</span><span class="period">.</span>
+</ul></article><p id="p-59">Notice that the preimage exists whether or not the inverse function exists (and the notation \(f^{-1}\) refers only to the preimage in this course). We call the image of the entire domain the <em class="emphasis">image of the function</em>, \(f(A)\text{.}\)</p>
+<article class="exercise exercise-like" id="exercise-14"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.20</span><span class="period">.</span>
 </h6>
-<p id="p-58">If \(f(x)=x^2\) from \(\mathbb{Z}\) to itself, find \(f(\{-2,-1,0,1,2\})\) and \(f^{-1}(\{0,1,4\})\text{.}\)</p></article><article class="problem example-like" id="problem-4"><h6 class="heading">
-<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.19</span><span class="period">.</span>
+<p id="p-60">If \(f(x)=x^2\) from \(\mathbb{Z}\) to itself, find \(f(\{-2,-1,0,1,2\})\) and \(f^{-1}(\{0,1,4\})\text{.}\)</p></article><article class="problem example-like" id="problem-4"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.21</span><span class="period">.</span>
 </h6>
-<p id="p-59">Find functions \(f\) and \(g\) and sets \(S\) and \(T\) such that \(f(f^{-1}(T))\neq T\) and \(g^{-1}(g(S))\neq S\text{.}\) (Note that this is not composition!)</p></article><article class="problem example-like" id="problem-5"><h6 class="heading">
-<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.20</span><span class="period">.</span>
+<p id="p-61">Find functions \(f\) and \(g\) and sets \(S\) and \(T\) such that \(f(f^{-1}(T))\neq T\) and \(g^{-1}(g(S))\neq S\text{.}\) (Note that this is not composition!)</p></article><article class="problem example-like" id="problem-5"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.22</span><span class="period">.</span>
 </h6>
-<p id="p-60">With all sets appropriately defined, only one of two following statements is necessarily true. Prove one and disprove the other.</p>
+<p id="p-62">With all sets appropriately defined, only one of two following statements is necessarily true. Prove one and disprove the other.</p>
 <div class="displaymath">
 \begin{equation*}
 f(X\cap Y)=f(X)\cap f(Y)
@@ -274,88 +285,72 @@ f(X\cap Y)=f(X)\cap f(Y)
 \begin{equation*}
 f^{-1}(X\cap Y)=f^{-1}(X)\cap f^{-1}(Y)
 \end{equation*}
-</div></article></section><section class="subsection" id="subsection-4"><h3 class="heading hide-type">
+</div>
+<p data-braille="continuation">Can you add an assumption about \(f\) that makes the false statement true? If so, prove that statement under the additional assumption.</p></article></section><section class="subsection" id="subsection-4"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.4</span> <span class="title">Order Properties of the Real Numbers</span>
 </h3>
-<p id="p-61">We are almost ready to start some actual analysis, where the functions and sets will be defined on the real numbers. (As mentioned earlier, we will tacitly assume that numbers in this course are real numbers, unless we state otherwise.) In order to do this, we need some facts about real numbers, including the following <em class="emphasis">Order Axioms</em> previously promised.</p>
-<p id="p-62">Given \(a,b,c\in \mathbb{R}\text{:}\)</p>
-<ul class="disc">
-<li id="li-14">
-<h6 class="heading"><span class="title">Order Axiom 1.</span></h6>
-<p id="p-63">If \(a\lt b\) and \(b\lt c\) then \(a\lt c\text{.}\)</p>
-</li>
-<li id="li-15">
-<h6 class="heading"><span class="title">Order Axiom 2.</span></h6>
-<p id="p-64">If \(a\neq b\) then either \(a\lt b\) or \(b\lt a\) (but not both!).</p>
-</li>
-<li id="li-16">
-<h6 class="heading"><span class="title">Order Axiom 3.</span></h6>
-<p id="p-65">If \(a\lt b\text{,}\) then \(a+c\lt b+c\text{.}\)</p>
-</li>
-<li id="li-17">
-<h6 class="heading"><span class="title">Order Axiom 4.</span></h6>
-<p id="p-66">If \(a\lt b\) and \(c&gt;0\text{,}\) then \(ac\lt bc\text{;}\) if \(c\lt 0\text{,}\) then \(ac&gt;bc\text{.}\)</p>
-</li>
-<li id="li-18">
-<h6 class="heading"><span class="title">Order Axiom 5.</span></h6>
-<p id="p-67">Given \(a\in \mathbb{R}\text{,}\) then there is an integer \(n\) such that \(n\leq a\lt n+1\text{.}\)</p>
-</li>
-</ul>
-<article class="example example-like" id="example-13"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.21</span><span class="period">.</span>
+<p id="p-63">We are almost ready to start some actual analysis, where the functions and sets will be defined on the real numbers. (As mentioned earlier, we will tacitly assume that numbers in this course are real numbers, unless we state otherwise.) In order to do this, we need some facts about real numbers, including the following <em class="emphasis">Order Axioms</em> previously promised.</p>
+<article class="assemblage assemblage-like" id="assemblage-1"><h6 class="heading"><span class="title">The Order Axioms.</span></h6>
+<p id="p-64">For all \(a,b,c\in \mathbb{R}\text{:}\)</p>
+<ol class="decimal">
+<li id="li-11"><p id="p-65">If \(a\lt b\) and \(b\lt c\text{,}\) then \(a\lt c\text{.}\)</p></li>
+<li id="li-12"><p id="p-66">If \(a\neq b\text{,}\) then exactly one of \(a\lt b\) or \(b\lt a\) is true.</p></li>
+<li id="li-13"><p id="p-67">If \(a\lt b\text{,}\) then \(a+c\lt b+c\text{.}\)</p></li>
+<li id="li-14"><p id="p-68">If \(a\lt b\) and \(c&gt;0\text{,}\) then \(ac\lt bc\text{;}\) if \(c\lt 0\text{,}\) then \(ac&gt;bc\text{.}\)</p></li>
+<li id="li-15"><p id="p-69">There exists an integer \(n\) such that \(n\leq a\lt n+1\text{.}\)</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-15"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.23</span><span class="period">.</span>
 </h6>
-<p id="p-68">Why are \(n\) and \(n+1\) are the smallest possible such integers?</p></article><article class="definition definition-like" id="definition-3"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.22</span><span class="period">.</span>
+<p id="p-70">Why are \(n\) and \(n+1\) are the smallest possible such integers?</p></article><article class="definition definition-like" id="definition-4"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.24</span><span class="period">.</span>
 </h6>
-<p id="p-69">Given these axioms, we say that the real numbers \(\mathbb{R}\) are <dfn class="terminology">linearly ordered</dfn> because “less than” and “greater than” have meaning.</p></article><p id="p-70">The last axiom is sometimes called ‘Archimedean’. We call numbers greater than zero <em class="emphasis">positive</em>, and those greater than zero or equal to zero <em class="emphasis">nonnegative</em>; there is a similar definition for <em class="emphasis">negative</em> and <em class="emphasis">nonpositive</em>.</p>
-<p id="p-71">Adding the order axioms to the most basic facts about addition, subtraction, and multiplication already can allow us to prove slightly more advanced facts.</p>
-<article class="example example-like" id="example-14"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.23</span><span class="period">.</span>
-</h6>
-<p id="p-72">Under these axioms, the things you expect about the relationship between positive, negative, addition, and multiplication are true — such as ‘a positive times a negative is negative’ and ‘a positive plus a positive is positive’.</p></article><p id="p-73">I'll let two people present this one if they prove substantially different facts. We can use the definitions \(-a=-1\cdot a\) and \(a-b=a+(-b)\) to deal with the two possible subtraction facts.</p>
-<article class="problem example-like" id="problem-6"><h6 class="heading">
-<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.24</span><span class="period">.</span>
-</h6>
-<p id="p-74">Prove at least three of these types of results.</p></article><p id="p-75">Here is another useful fact related to the axioms. It may seem just as expected, but is quite different in style.</p>
-<article class="problem example-like" id="problem-7"><h6 class="heading">
+<p id="p-71">Given these axioms, we say that the real numbers \(\mathbb{R}\) are <dfn class="terminology">linearly ordered</dfn> because “less than” and “greater than” have meaning.</p></article><p id="p-72">The last axiom is sometimes called ‘Archimedean’. We call numbers greater than zero <em class="emphasis">positive</em>, and those greater than zero or equal to zero <em class="emphasis">nonnegative</em>; there is a similar definition for <em class="emphasis">negative</em> and <em class="emphasis">nonpositive</em>.</p>
+<p id="p-73">Adding the order axioms to the most basic facts about addition, subtraction, and multiplication already can allow us to prove slightly more advanced facts.</p>
+<p id="p-74">Under these axioms, the things you expect about the relationship between positive, negative, addition, and multiplication are true — such as ‘a positive times a negative is negative’ and ‘a positive plus a positive is positive’.</p>
+<p id="p-75">I'll let multiple people present <a class="xref" data-knowl="./knowl/prob-pos-neg-arithmetic.html" title="Problem 1.25">Problem 1.25</a> if they prove substantially different facts.  You can use \(-a=-1\cdot a\) and \(a-b=a+(-b)\) as definitions to deal with the two possible subtraction facts.</p>
+<article class="problem example-like" id="prob-pos-neg-arithmetic"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.25</span><span class="period">.</span>
 </h6>
-<p id="p-76">Prove that for any positive \(a\in\mathbb{R}\text{,}\) there is an integer \(N\) such that \(0\lt \frac{1}{N}\lt a\text{.}\)</p></article><p id="p-77">Finally, there is a special function which should be introduced now.</p>
-<article class="definition definition-like" id="definition-4"><h6 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.26</span><span class="period">.</span>
+<p id="p-76">Prove at least three of these types of results.</p></article><p id="p-77">Here is another useful fact related to the axioms. It may seem just as expected, but is quite different in style.</p>
+<article class="theorem theorem-like" id="theorem-1"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.26</span><span class="period">.</span>
 </h6>
-<p id="p-78">Given \(a\in\mathbb{R}\text{,}\) we define the <dfn class="terminology">absolute value of \(a\)</dfn>, denoted \(|a|\text{,}\) to be \(a\) if \(a\geq 0\) and \(-a\) otherwise.</p></article><article class="example example-like" id="example-15"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.27</span><span class="period">.</span>
+<p id="p-78">For every positive \(a\in\mathbb{R}\text{,}\) there is an integer \(N\) such that \(0\lt \frac{1}{N}\lt a\text{.}\)</p></article><p id="p-79">Finally, there is a special function which should be introduced now.</p>
+<article class="definition definition-like" id="definition-5"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.27</span><span class="period">.</span>
 </h6>
-<p id="p-79">Show that \(|-4|\) is what you expect, using this definition.</p></article><article class="example example-like" id="example-16"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.28</span><span class="period">.</span>
+<p id="p-80">Given \(a\in\mathbb{R}\text{,}\) we define the <dfn class="terminology">absolute value of \(a\)</dfn>, denoted \(|a|\text{,}\) to be \(a\) if \(a\geq 0\) and \(-a\) otherwise.</p></article><article class="exercise exercise-like" id="exercise-16"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.28</span><span class="period">.</span>
 </h6>
-<p id="p-80">Show that \(|a|\geq 0\text{,}\) with equality only if \(a=0\text{.}\)</p></article><article class="example example-like" id="example-17"><h6 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.29</span><span class="period">.</span>
+<p id="p-81">Show that \(|-4|\) is what you expect, using this definition.</p></article><article class="exercise exercise-like" id="exercise-17"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.29</span><span class="period">.</span>
 </h6>
-<p id="p-81">Show that \(|a|^2=a^2\text{.}\)</p></article><p id="p-82">The next two statements are pretty useful, and best proved (for now) by cases, though they have more clever proofs too.</p>
-<article class="problem example-like" id="problem-8"><h6 class="heading">
-<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.30</span><span class="period">.</span>
+<p id="p-82">Show that \(|a|\geq 0\text{,}\) with equality only if \(a=0\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-18"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">1.30</span><span class="period">.</span>
 </h6>
-<p id="p-83">Show that \(|ab|=|a||b|\text{.}\)</p></article><article class="problem example-like" id="problem-9"><h6 class="heading">
-<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.31</span><span class="period">.</span>
+<p id="p-83">Show that \(|a|^2=a^2\text{.}\)</p></article><p id="p-84">The next two statements are pretty useful, and best proved (for now) by cases, though they have more clever proofs too.</p>
+<article class="theorem theorem-like" id="theorem-2"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.31</span><span class="period">.</span>
 </h6>
-<p id="p-84">Show that \(|a+b|\leq |a|+|b|\text{.}\)</p></article><p id="p-85">The latter is usually called the <em class="emphasis">triangle inequality</em>, and we have seen it before. A related statement is sometimes called the <em class="emphasis">reverse triangle inequality</em>.</p>
-<article class="problem example-like" id="problem-10"><h6 class="heading">
-<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.32</span><span class="period">.</span>
+<p id="p-85">For all \(a,b\in\R\text{,}\) \(|ab|=|a||b|\text{.}\)</p></article><article class="theorem theorem-like" id="thm-triangle-ineq"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.32</span><span class="period">.</span><span class="space"> </span><span class="title">Triangle Inequality.</span>
 </h6>
-<p id="p-86">Show that \(|a-b|\geq |\, |a|-|b| \,|\text{.}\)</p></article><p id="p-87">To prove the following, be sure to review properties of the integers we assume without proof.</p>
-<article class="problem example-like" id="problem-11"><h6 class="heading">
-<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.33</span><span class="period">.</span>
+<p id="p-86">Show that \(|a+b|\leq |a|+|b|\text{.}\)</p></article><p id="p-87">The related theorem below is sometimes called the <em class="emphasis">reverse triangle inequality</em>.</p>
+<article class="theorem theorem-like" id="theorem-4"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.33</span><span class="period">.</span>
 </h6>
-<p id="p-88">Assume that there is a positive element of the preimage of \(\{2\}\) under the function \(f(x) = x^2\) from the reals to the reals; that is, assume \(\sqrt{2}\) exists. Show \(1\lt \sqrt{2}\lt 2\text{.}\)</p></article><p id="p-90">In <em class="emphasis">Transition</em>, we see that \(\sqrt{2}\) is not a rational number, so now we have an irrational between two rationals, by Example 11. The following problems are a good challenge to generalize this.</p>
-<article class="problem example-like" id="problem-12"><h6 class="heading">
-<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.34</span><span class="period">.</span>
+<p id="p-88">Show that \(|a-b|\geq |\, |a|-|b| \,|\text{.}\)</p></article><p id="p-89">To prove the following, be sure to review properties of the integers we <a href="sec_prelim.html#ss-absolute-basics" class="internal" title="Subsection 1.1: Absolute Basics">assume without proof 1.1</a>.</p>
+<article class="theorem theorem-like" id="thm-sqrt2-between"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.34</span><span class="period">.</span>
 </h6>
-<p id="p-91">Prove that between any two distinct real numbers there is a rational number.</p></article><article class="problem example-like" id="problem-13"><h6 class="heading">
-<span class="type">Problem</span><span class="space"> </span><span class="codenumber">1.35</span><span class="period">.</span>
+<p id="p-90">Assume that there is a positive element of the preimage of \(\{2\}\) under the function \(f(x) = x^2\) from the reals to the reals; that is, assume \(\sqrt{2}\) exists. Show \(1\lt \sqrt{2}\lt 2\text{.}\)</p></article><p id="p-92">In <em class="emphasis">MATH 210</em>, we saw that \(\sqrt{2}\) is not a rational number, so now we have an irrational between two rationals, by <a class="xref" data-knowl="./knowl/thm-sqrt2-between.html" title="Theorem 1.34">Theorem 1.34</a>. The following theorems are a good challenge to generalize this.</p>
+<article class="theorem theorem-like" id="thm-rat-between"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.35</span><span class="period">.</span>
 </h6>
-<p id="p-93">Prove that between any two distinct real numbers there is an irrational number.</p></article><p id="p-95">We now turn to the main matters under consideration in this course.</p></section></section></div></main>
+<p id="p-93">For all \(a,b\in\R\) with \(a \lt b\text{,}\) there exists \(q\in\Q\) such that \(a \lt q\lt b\text{.}\)</p></article><article class="theorem theorem-like" id="thm-irrat-between"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.36</span><span class="period">.</span>
+</h6>
+<p id="p-95">For all \(a,b\in\R\) with \(a \lt b\text{,}\) there exists \(r\in\irrat\) such that \(a \lt r\lt b\text{.}\)</p></article><p id="p-97">In the next section, we turn to the main matters under consideration in this course.</p></section></section></div></main>
 </div>
 </body>
 </html>
