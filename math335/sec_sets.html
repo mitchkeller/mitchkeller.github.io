@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-02-01T15:22:04-06:00       *-->
+<!--*       on 2021-02-05T08:54:53-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -100,6 +100,7 @@ MathJax.Hub.Config({
 <a href="sec_sets.html" data-scroll="sec_sets"><span class="codenumber">2</span> <span class="title">Point Sets and Sequences</span></a><ul>
 <li><a href="sec_sets.html#subsection-5" data-scroll="subsection-5">Point Sets</a></li>
 <li><a href="sec_sets.html#subsection-6" data-scroll="subsection-6">Sequences</a></li>
+<li><a href="sec_sets.html#subsection-7" data-scroll="subsection-7">Completeness</a></li>
 </ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
@@ -137,7 +138,7 @@ MathJax.Hub.Config({
 <p id="p-106">We say that a point set \(O\) is a (finite) <dfn class="terminology">open interval</dfn> if there are points \(a\neq b\) such that \(O\) is the point set consisting of all points between \(a\) and \(b\text{.}\) That is,</p>
 <div class="displaymath">
 \begin{equation*}
-O=\{x \,|\, a\lt x\lt b\}=(a,b)\,\text{.}
+O=\{x \,\mid \, a\lt x\lt b\}=(a,b)\,\text{.}
 \end{equation*}
 </div></article><article class="definition definition-like" id="definition-9"><h6 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.8</span><span class="period">.</span>
@@ -145,7 +146,7 @@ O=\{x \,|\, a\lt x\lt b\}=(a,b)\,\text{.}
 <p id="p-107">We say that a point set \(I\) is a (finite) <dfn class="terminology">closed interval</dfn> if there are points \(a\neq b\) such that \(I\) is the point set consisting of \(a\text{,}\) \(b\text{,}\) and all points between \(a\) and \(b\text{.}\) That is,</p>
 <div class="displaymath">
 \begin{equation*}
-I=\{x \,| \,a\leq x\leq b\}=[a,b]\,\text{.}
+I=\{x \,\mid \,a\leq x\leq b\}=[a,b]\,\text{.}
 \end{equation*}
 </div></article><p id="p-108">In either case, \(a\) and \(b\) are called the <em class="emphasis">endpoints</em> of the interval.</p>
 <article class="exercise exercise-like" id="exercise-20"><h6 class="heading">
@@ -220,7 +221,100 @@ I=\{x \,| \,a\leq x\leq b\}=[a,b]\,\text{.}
 <p id="p-137">Consider the sequence with odd terms \(p_{2k-1}=\frac{1}{2k-1}\) and even terms \(p_{2k}=1+\frac{1}{2k}\text{.}\) Determine whether \(p\) converges to \(0\text{.}\)</p></article><article class="theorem theorem-like" id="theorem-16"><h6 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.28</span><span class="period">.</span>
 </h6>
-<p id="p-138">The sequence given by \(p_{2k} = \frac{1}{2k}\) and \(p_{2k-1}=-\frac{1}{2n-1}\) converges to \(0\text{.}\)</p></article></section></section></div></main>
+<p id="p-138">The sequence given by \(p_{2k} = \frac{1}{2k}\) and \(p_{2k-1}=-\frac{1}{2k-1}\) converges to \(0\text{.}\)</p></article><p id="p-139">The following problem connects our two concepts. The most profound property of the real numbers is part of this connection, as we'll soon see.</p>
+<article class="theorem theorem-like" id="theorem-17"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.29</span><span class="period">.</span>
+</h6>
+<p id="p-140">If \(p\) converges to the point \(x\) <em class="emphasis">and</em> for each \(i\in \mathbb{N}\text{,}\) \(p_i\neq p_{i+1}\text{,}\) then \(x\) is an accumulation point of the image set of \(\{p_i\}_{i=1}^\infty\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-24"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.30</span><span class="period">.</span>
+</h6>
+<p id="p-141">Why do we need the restriction that \(p_i\neq p_{i+1}\text{?}\) Is this an absolutely necessary restriction for \(x\) to be an accumulation point of the image set?</p></article><article class="theorem theorem-like" id="theorem-18"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.31</span><span class="period">.</span>
+</h6>
+<p id="p-142">The sequence \(\left\{\frac{1}{i}\right\}_{i=1}^\infty\) does not converge to a point other than zero.</p></article><article class="theorem theorem-like" id="theorem-19"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.32</span><span class="period">.</span>
+</h6>
+<p id="p-143">If \(p\) converges to the point \(x\) and \(y\) is a point different from \(x\text{,}\) then \(p\) does <em class="emphasis">not</em> converge to \(y\text{.}\)</p></article><p id="p-145">Basic familiar facts about sequence convergence are recalled next. In these proofs, you may have to think a little more explicitly about what the intervals around \(x\) look like in order to combine sequences. Try doing some examples with explicit numbers first, to get a sense of how to approach them.</p>
+<article class="theorem theorem-like" id="theorem-20"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.33</span><span class="period">.</span>
+</h6>
+<p id="p-146">If \(c\) is a number and \(p=\{p_i\}_{i=1}^\infty\) converges to \(x\text{,}\) then \(cp\) (which means what you think it does) converges to \(cx\text{.}\)</p></article><article class="theorem theorem-like" id="theorem-21"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.34</span><span class="period">.</span>
+</h6>
+<p id="p-148">If \(q=\{q_i\}_{i=1}^\infty\) converges to \(y\) and \(p=\{p_i\}_{i=1}^\infty\) converges to \(x\text{,}\) then \(\{q_i+p_i\}_{i=1}^\infty\) (which means what you think it does) converges to \(y+x\text{.}\)</p></article><p id="p-150">Products and quotients of sequences behave like you think they will as well, and you can use these facts in the rest of the notes. We will include one special case soon.</p></section><section class="subsection" id="subsection-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">2.3</span> <span class="title">Completeness</span>
+</h3>
+<p id="p-151">Now we introduce a few more definitions that will lead us to the key axiom for the real numbers—<em class="emphasis">completeness</em>. We'll continue to see interplay between sequences and sets.</p>
+<article class="definition definition-like" id="definition-13"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.35</span><span class="period">.</span>
+</h6>
+<p id="p-152">We say that a point set \(M\) is <dfn class="terminology">bounded</dfn> if \(M\) is a subset of some closed interval.</p></article><article class="definition definition-like" id="definition-14"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.36</span><span class="period">.</span>
+</h6>
+<p id="p-153">We say that a point set \(M\) is <dfn class="terminology">bounded above</dfn> if there is a point \(z\) such that if \(x\in M\) then \(x\leq z\text{;}\) such a point is an <dfn class="terminology">upper bound</dfn>.</p></article><article class="exercise exercise-like" id="exercise-25"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.37</span><span class="period">.</span>
+</h6>
+<p id="p-154">The property of a point set \(M\) being <dfn class="terminology">bounded below</dfn> and the notion of a <dfn class="terminology">lower bound</dfn> are defined similarly. Define them carefully.</p></article><article class="exercise exercise-like" id="exercise-26"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.38</span><span class="period">.</span>
+</h6>
+<p id="p-155">Show that a point set (in \(\mathbb{R}\)) being bounded is the same as it being bounded above and below.</p></article><article class="exercise exercise-like" id="exercise-27"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.39</span><span class="period">.</span>
+</h6>
+<p id="p-156">Find all upper bounds for \((0,1)\text{,}\) \([0,1]\text{,}\) and \((0,1)\cap \mathbb{Q}^{C}\) (irrationals between 0 and 1).</p></article><p id="p-157">In the next theorem, remember that we ‘abuse notation’ by using \(\{p_i\}_{i=1}^\infty\) to mean more than one mathematical object.</p>
+<article class="theorem theorem-like" id="theorem-22"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.40</span><span class="period">.</span>
+</h6>
+<p id="p-158">If the sequence \(p\) converges to the point \(x\text{,}\) then the image set \(\{p_i\}_{i=1}^\infty\) is bounded.</p></article><p id="p-159">You can use this concept to prove some of the more difficult sequence convergence properties.</p>
+<article class="theorem theorem-like" id="theorem-23"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.41</span><span class="period">.</span>
+</h6>
+<p id="p-160">If \(q\) converges to \(0\) and \(p\) converges to \(x\text{,}\) then        \(\{q_i\cdot p_i\}_{i=1}^\infty\) (which means what you think it does) converges to \(0\text{.}\)</p></article><p id="p-162">Now we start to approach the heart of why calculus works.</p>
+<article class="definition definition-like" id="definition-15"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.42</span><span class="period">.</span>
+</h6>
+<p id="p-163">We say \(p\) is a <dfn class="terminology">least upper bound</dfn> (or <dfn class="terminology">supremum</dfn>) of \(M\) if \(p\) is an upper bound of \(M\) and \(p\leq q\) for any other upper bound \(q\) of \(M\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-28"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.43</span><span class="period">.</span>
+</h6>
+<p id="p-164">Define the <dfn class="terminology">greatest lower bound</dfn> and <dfn class="terminology">infimum</dfn> by analogy.</p></article><article class="exercise exercise-like" id="exercise-29"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.44</span><span class="period">.</span>
+</h6>
+<p id="p-165">Find the suprema of \((0,1)\text{,}\) and \((0,1)\cap \mathbb{Q}^{C}\text{.}\) If we could apply the definition of supremum to \(\emptyset\text{,}\) what would its supremum be?</p></article><article class="theorem theorem-like" id="theorem-24"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.45</span><span class="period">.</span>
+</h6>
+<p id="p-166">If a point set has a supremum, then that supremum is unique.</p></article><article class="problem example-like" id="problem-11"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.46</span><span class="period">.</span>
+</h6>
+<p id="p-167">If \(M\) and \(N\) are point sets with suprema, characterize the supremum of \(M\cup N\text{.}\)</p></article><p id="p-168">If \(M\) and \(N\) are point sets, define \(cM\) to be \(\{cx \mid x\in M\}\) and \(M+N=\{x+y \mid x\in M, y\in N\}\text{.}\) For <a class="xref" data-knowl="./knowl/thm-sup-sum-prod.html" title="Theorem 2.47">Theorem 2.47</a>, I will take volunteers for the scalar multiple and sum portions separately.</p>
+<article class="theorem theorem-like" id="thm-sup-sum-prod"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.47</span><span class="period">.</span>
+</h6>
+<p id="p-169">Assuming \(M\) and \(N\) have suprema, \(\sup(cM)\) is \(c\sup(M)\) (given \(c&gt;0\)) and \(\sup(M+N)=\sup(M)+\sup(N)\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-30"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.48</span><span class="period">.</span>
+</h6>
+<p id="p-170">Show that \(c\inf(M) = \sup(cM)\) if \(c\lt 0\text{.}\) What other properties are there relating \(\inf\text{,}\) \(\sup\text{,}\) and \(c\text{?}\)</p></article><p id="p-171">The reason the supremum is so important is this fundamental axiom:</p>
+<article class="axiom theorem-like" id="ax-complete"><h6 class="heading">
+<span class="type">Axiom</span><span class="space"> </span><span class="codenumber">2.49</span><span class="period">.</span><span class="space"> </span><span class="title">Completeness of the Real Numbers.</span>
+</h6>
+<p id="p-172">If \(M\) is a point set and is bounded above, then \(M\) has a supremum.</p></article><article class="exercise exercise-like" id="exercise-31"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.50</span><span class="period">.</span>
+</h6>
+<p id="p-173">Find a sequence \(p\) such that the image set is unbounded \(\{p_i\}_{i=1}^\infty\) and hence does not have a supremum.</p></article><article class="exercise exercise-like" id="exercise-32"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.51</span><span class="period">.</span>
+</h6>
+<p id="p-174">Show <a class="xref" data-knowl="./knowl/ax-complete.html" title="Axiom 2.49: Completeness of the Real Numbers">Axiom 2.49</a> is <em class="emphasis">not</em> true if one requires that the supremum be a rational number.</p></article><p id="p-175">The next problem is an equivalent “sequence definition” formulation of completeness of the real numbers.</p>
+<article class="definition definition-like" id="definition-16"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.52</span><span class="period">.</span>
+</h6>
+<p id="p-176">We say that a sequence \(p\) is <dfn class="terminology">nondecreasing</dfn> if \(p_i\leq p_{i+1}\) for all \(i\in \mathbb{N}\text{.}\) (The concept of nonincreasing is defined similarly.)</p></article><article class="exercise exercise-like" id="exercise-33"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.53</span><span class="period">.</span>
+</h6>
+<p id="p-177">Replace the \(\leq\) above with \(\lt\) to define the notion of (strictly) <dfn class="terminology">increasing</dfn>. Find examples of nondecreasing sequences which are not increasing (and similarly for nonincreasing/decreasing).</p></article><article class="theorem theorem-like" id="thm-nondec-bded-convg"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.54</span><span class="period">.</span>
+</h6>
+<p id="p-178">If \(p\) is a nondecreasing sequence such that the image set \(\{p_i\}_{i=1}^\infty\) is bounded above, then \(p\) converges to some point \(x\text{.}\)</p></article><article class="problem example-like" id="problem-12"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.55</span><span class="period">.</span>
+</h6>
+<p id="p-179">Assume <a class="xref" data-knowl="./knowl/thm-nondec-bded-convg.html" title="Theorem 2.54">Theorem 2.54</a> is true and use it to prove the completeness axiom for point sets.</p></article></section></section></div></main>
 </div>
 </body>
 </html>
