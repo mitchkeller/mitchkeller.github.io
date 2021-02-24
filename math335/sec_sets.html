@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-02-05T08:54:53-06:00       *-->
+<!--*       on 2021-02-24T12:51:15-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -76,10 +76,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_prelim.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_prelim.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sec_continuity.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_prelim.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_prelim.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sec_continuity.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -101,6 +101,12 @@ MathJax.Hub.Config({
 <li><a href="sec_sets.html#subsection-5" data-scroll="subsection-5">Point Sets</a></li>
 <li><a href="sec_sets.html#subsection-6" data-scroll="subsection-6">Sequences</a></li>
 <li><a href="sec_sets.html#subsection-7" data-scroll="subsection-7">Completeness</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="sec_continuity.html" data-scroll="sec_continuity"><span class="codenumber">3</span> <span class="title">Continuity</span></a><ul>
+<li><a href="sec_continuity.html#subsection-8" data-scroll="subsection-8">Definition</a></li>
+<li><a href="sec_continuity.html#subsection-9" data-scroll="subsection-9">Connection to Sequences</a></li>
 </ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
@@ -314,7 +320,16 @@ I=\{x \,\mid \,a\leq x\leq b\}=[a,b]\,\text{.}
 <p id="p-178">If \(p\) is a nondecreasing sequence such that the image set \(\{p_i\}_{i=1}^\infty\) is bounded above, then \(p\) converges to some point \(x\text{.}\)</p></article><article class="problem example-like" id="problem-12"><h6 class="heading">
 <span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.55</span><span class="period">.</span>
 </h6>
-<p id="p-179">Assume <a class="xref" data-knowl="./knowl/thm-nondec-bded-convg.html" title="Theorem 2.54">Theorem 2.54</a> is true and use it to prove the completeness axiom for point sets.</p></article></section></section></div></main>
+<p id="p-179">Assume <a class="xref" data-knowl="./knowl/thm-nondec-bded-convg.html" title="Theorem 2.54">Theorem 2.54</a> is true and use it to prove the completeness axiom for point sets.</p></article><p id="p-180">Why is all this so important? One reason is that we can use the completeness of the reals to <em class="emphasis">prove</em> one of the axioms we snuck in earlier. It may be thought of as the “real” reason why the following is true, sicne open intervals can be as small as we need them to be.</p>
+<article class="problem example-like" id="problem-13"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">2.56</span><span class="period">.</span>
+</h6>
+<p id="p-181">Using the previous problem (but not its proof!), show that for any point \(x\text{,}\) there is an \(n\in\Z\) such that \(n\gt x\text{.}\)</p></article><p id="p-182">A use of this alternative definition of completeness (that nondecreasing sequences bounded above converge) is to prove the following famous theorem, which we state but will not prove:</p>
+<article class="assemblage assemblage-like" id="asm-bw-thm"><h6 class="heading"><span class="title">The Bolzano-Weierstrass Theorem.</span></h6>
+<p id="p-183">Let us call a sequence \(\{b_k\}_{k=1}^\infty\) a <dfn class="terminology">subsetquence</dfn> of another sequence \(\{a_n\}_{n=1}^\infty\) if there is a sequence of natural numbers \(\{n_i\}_{i=1}^\infty\) with \(n_i \lt n_{i+1}\) for all \(i\) such that \(b_k = a_{n_k}\text{.}\) Every sequence with bounded image set has a convergent subsequence.</p></article><article class="exercise exercise-like" id="exercise-34"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">2.57</span><span class="period">.</span>
+</h6>
+<p id="p-184">Let \(p_n=(-1)^n\text{.}\) Find a convergent subsequence of this sequence guaranteed by the <a class="xref" data-knowl="./knowl/asm-bw-thm.html" title="Assemblage: The Bolzano-Weierstrass Theorem">The Bolzano-Weierstrass Theorem</a>.</p></article><p id="p-185">There are also many famous properties of sequences which the sequential definition of completeness allows us to prove, but we will have to skip these in order to start tackling more familiar concepts from calculus, which we do next.</p></section></section></div></main>
 </div>
 </body>
 </html>
