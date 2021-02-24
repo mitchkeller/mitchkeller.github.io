@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-02-24T12:51:15-06:00       *-->
+<!--*       on 2021-02-24T16:50:06-06:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -107,6 +107,7 @@ MathJax.Hub.Config({
 <a href="sec_continuity.html" data-scroll="sec_continuity"><span class="codenumber">3</span> <span class="title">Continuity</span></a><ul>
 <li><a href="sec_continuity.html#subsection-8" data-scroll="subsection-8">Definition</a></li>
 <li><a href="sec_continuity.html#subsection-9" data-scroll="subsection-9">Connection to Sequences</a></li>
+<li><a href="sec_continuity.html#subsection-10" data-scroll="subsection-10">IVT and EVT</a></li>
 </ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
@@ -170,7 +171,54 @@ MathJax.Hub.Config({
 <p id="p-206">If \(f\) and \(g\) are continuous at a point \(x\text{,}\) so is the function \(fg\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-37"><h6 class="heading">
 <span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3.15</span><span class="period">.</span>
 </h6>
-<p id="p-208">All polynomials in \(x\) are continuous for all \(x\) (here, in the full domain \(\mathbb{R}\))</p></article></section></section></div></main>
+<p id="p-208">All polynomials in \(x\) are continuous for all \(x\) (here, in the full domain \(\mathbb{R}\)).</p></article></section><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">3.3</span> <span class="title">IVT and EVT</span>
+</h3>
+<p id="p-209">Before finally moving to calculus proper, we'll deal briefly with two foundational theorems about \(\mathbb{R}\) and continuous functions that have everything to do with completeness.</p>
+<article class="assemblage assemblage-like" id="assemblage-3"><h6 class="heading"><span class="title">The Extreme Value Theorem.</span></h6>
+<p id="p-210">Let \(I\) be a closed interval and suppose that \(f\) is a function which is continuous on \(I\text{.}\) Then there exists \(x_M\in I\) such that \(f(x_M)\geq f(x)\) for all \(x\in I\text{.}\)</p></article><article class="assemblage assemblage-like" id="assemblage-4"><h6 class="heading"><span class="title">The Intermediate Value Theorem.</span></h6>
+<p id="p-211">Suppose \(f\) is a continuous function on a closed interval \(I=[a,b]\text{,}\) and that \(f(a)\lt c\lt f(b)\text{.}\) There there is a point \(x\in [a,b]\) such that \(f(x)=c\text{.}\)</p></article><p id="p-212">One way to get a handle on these theorems is to find counterexamples when the hypotheses are not satisfied.</p>
+<article class="problem example-like" id="problem-16"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">3.16</span><span class="period">.</span>
+</h6>
+<p id="p-213">Find a continuous function on \(\mathbb{R}\) which does not satisfy the conclusions of the Extreme Value Theorem; do the same for a discontinuous function on \([0,1]\text{.}\)</p></article><article class="problem example-like" id="problem-17"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">3.17</span><span class="period">.</span>
+</h6>
+<p id="p-215">Find a continuous function on \([0,1]\cup [2,3]\) with \(f(0)=-1,f(3)=1\) which does not satisfy the conclusions of the Intermediate Value Theorem; do the same for a discontinuous function on \([0,1]\) where \(f(0)=-1,f(1)=1\text{.}\)</p></article><p id="p-217">Proving the EVT is most often done using the sequential definition of continuity (or other definitions); it's rather tricky to do it using only the supremum definition. Here is one piece of the proof (this piece actually applies to non-continuous functions). Since this would be part of the proof of the EVT, do not use the EVT in proving the following theorem.</p>
+<article class="theorem theorem-like" id="theorem-34"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.18</span><span class="period">.</span>
+</h6>
+<p id="p-218">Let \(f\) be a function on \([0,1]\text{.}\) If the image \(f([0,1])\) has a supremum, then there is a sequence of points \(\{x_i\}_{i=1}^\infty\) in \([0,1]\) such that \(\{f(x_i)\}_{i=1}^\infty\) converges to that supremum.</p></article><article class="exercise exercise-like" id="exercise-38"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">3.19</span><span class="period">.</span>
+</h6>
+<p id="p-219">Explain why that's not enough, by itself, to prove the whole Extreme Value Theorem.</p></article><p id="p-220">Proving the IVT, on the other hand, can definitely be done using just the set definitions of completeness and continuity. (One can even formalize that the EVT is ‘harder’ to prove, requiring both the axioms needed for the IVT and something called the ‘Weak König Lemma’.) The next problem should get your creative juices flowing as to how to find the \(x\) such that the IVT holds for that \(x\text{.}\) Be careful to show that your \(x\) <em class="emphasis">exists</em>!</p>
+<article class="problem example-like" id="problem-18"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">3.20</span><span class="period">.</span>
+</h6>
+<p id="p-221">Let \(f\) be any function on \([0,1]\) such that \(f(0)=-1\text{,}\) \(f(1)=1\text{,}\) and \(f([0,1])=\{-1,1\}\text{.}\) Show (without using the IVT) that there is an \(x\in [0,1]\) such that \(f\) is not continuous at \(x\text{.}\)</p></article><article class="lemma theorem-like" id="lemma-1"><h6 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">3.21</span><span class="period">.</span>
+</h6>
+<p id="p-222">If \(f\) is a continuous function on a closed interval \(I=[a,b]\) and \(f(a)\lt 0\lt f(b)\text{,}\) then there is a point \(x\in [a,b]\) such that \(f(x)=0\text{.}\)</p></article><p id="p-223">Note that this is also true if \(f(b)\lt 0\lt f(a)\text{.}\)</p>
+<article class="corollary theorem-like" id="corollary-1"><h6 class="heading">
+<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">3.22</span><span class="period">.</span>
+</h6>
+<p id="p-224">The Intermediate Value Theorem is true.</p></article><p id="p-225">As with the previous lemma, the IVT holds just as well if \(f(b)
+\lt c\lt f(a)\text{.}\)</p>
+<p id="p-227">The two theorems combine in a deep way; if we had time for just a bit more topology, we could have used the words <dfn class="terminology">compact</dfn> and <dfn class="terminology">connected</dfn> to describe the following result.</p>
+<article class="theorem theorem-like" id="theorem-35"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.23</span><span class="period">.</span>
+</h6>
+<p id="p-228">The image of a closed interval under a continuous function is either a closed interval or a single point.</p></article><article class="problem example-like" id="problem-19"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">3.24</span><span class="period">.</span>
+</h6>
+<p id="p-229">Find a function \(f\) on a closed interval \(I\) such that \(f(I)\) is also a closed interval, but for which \(f\) is not continuous for some \(x\in
+I\text{.}\)</p></article><article class="problem example-like" id="problem-20"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">3.25</span><span class="period">.</span>
+</h6>
+<p id="p-230">Find a continuous function \(g\) on a closed interval \(I=[a,b]\) such that \(g(a)=g(b)\) but \(g(I)\) is not (just) the single point \(g(a)\text{.}\)</p></article><article class="problem example-like" id="problem-21"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">3.26</span><span class="period">.</span>
+</h6>
+<p id="p-231">Find a function \(h\) on a closed interval \(I\) such that \(h(I)\) is not a closed interval.</p></article><p id="p-233">We will not say more about the proof of the Extreme Value Theorem at this time. You are welcome to use it from here on out, unless informed otherwise.</p></section></section></div></main>
 </div>
 </body>
 </html>
