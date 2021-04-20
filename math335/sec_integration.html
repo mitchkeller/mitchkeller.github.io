@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2021-04-20T17:54:11-05:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Integration</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-article has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\newcommand{\co}[1]{\overline{#1}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\irrat}{\mathbb{Q}^C}
+\newcommand{\empset}{\{\}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="article-1.html"><span class="title">Introduction to Real Analysis</span></a></h1>
+<p class="byline">Mitchel T. Keller, Karl-Dieter Crisman, W. Ted Mahavier, W.S. Mahavier</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec_differentiation.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec_differentiation.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="article-1.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter-1.html" data-scroll="frontmatter-1"><span class="title">Front Matter</span></a></li>
+<li class="link"><a href="pref_keller.html" data-scroll="pref_keller"><span class="title">Preface</span></a></li>
+<li class="link"><a href="pref_KDC-ack.html" data-scroll="pref_KDC-ack"><span class="title">Acknowledgements (KDC)</span></a></li>
+<li class="link"><a href="pref_intro.html" data-scroll="pref_intro"><span class="title">Introduction</span></a></li>
+<li class="link">
+<a href="sec_prelim.html" data-scroll="sec_prelim"><span class="codenumber">1</span> <span class="title">Preliminaries and Review</span></a><ul>
+<li><a href="sec_prelim.html#ss-absolute-basics" data-scroll="ss-absolute-basics">Absolute Basics</a></li>
+<li><a href="sec_prelim.html#subsection-2" data-scroll="subsection-2">Logic Review</a></li>
+<li><a href="sec_prelim.html#subsection-3" data-scroll="subsection-3">Sets and Functions</a></li>
+<li><a href="sec_prelim.html#subsection-4" data-scroll="subsection-4">Order Properties of the Real Numbers</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="sec_sets.html" data-scroll="sec_sets"><span class="codenumber">2</span> <span class="title">Point Sets and Sequences</span></a><ul>
+<li><a href="sec_sets.html#subsection-5" data-scroll="subsection-5">Point Sets</a></li>
+<li><a href="sec_sets.html#subsection-6" data-scroll="subsection-6">Sequences</a></li>
+<li><a href="sec_sets.html#subsection-7" data-scroll="subsection-7">Completeness</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="sec_continuity.html" data-scroll="sec_continuity"><span class="codenumber">3</span> <span class="title">Continuity</span></a><ul>
+<li><a href="sec_continuity.html#subsection-8" data-scroll="subsection-8">Definition</a></li>
+<li><a href="sec_continuity.html#subsection-9" data-scroll="subsection-9">Connection to Sequences</a></li>
+<li><a href="sec_continuity.html#subsection-10" data-scroll="subsection-10">IVT and EVT</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="sec_differentiation.html" data-scroll="sec_differentiation"><span class="codenumber">4</span> <span class="title">Differentiation</span></a><ul>
+<li><a href="sec_differentiation.html#subsection-11" data-scroll="subsection-11">Basics</a></li>
+<li><a href="sec_differentiation.html#subsection-12" data-scroll="subsection-12">Pathologies</a></li>
+<li><a href="sec_differentiation.html#subsection-13" data-scroll="subsection-13">Major Theorems</a></li>
+</ul>
+</li>
+<li class="link active">
+<a href="sec_integration.html" data-scroll="sec_integration"><span class="codenumber">5</span> <span class="title">Integration</span></a><ul>
+<li><a href="sec_integration.html#ssec_integration_defns" data-scroll="ssec_integration_defns">Definitions</a></li>
+<li><a href="sec_integration.html#ssec_integration_integrable" data-scroll="ssec_integration_integrable">Integrable Functions</a></li>
+<li><a href="sec_integration.html#ssec_integration_FTC" data-scroll="ssec_integration_FTC">FTC</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="sec_integration"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5</span> <span class="title">Integration</span>
+</h2>
+<section class="subsection" id="ssec_integration_defns"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.1</span> <span class="title">Definitions</span>
+</h3>
+<p id="p-261">Unlike with differentiation, we will need a number of auxiliary definitions for beginning integration.</p>
+<article class="definition definition-like" id="definition-21"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1</span><span class="period">.</span>
+</h6>
+<p id="p-262">A set of points \(\{t_0,t_1,\ldots,t_n\}\) such that \(a=t_0\text{,}\) \(b=t_n\text{,}\) and \(t_{i-1}\lt t_{i}\) for all \(i\) is called a <dfn class="terminology">partition</dfn> of the closed interval \([a,b]\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-42"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.2</span><span class="period">.</span>
+</h6>
+<p id="p-263">Give some partitions of \([2,4]\) and \([-1,0]\text{.}\) What would the points of a partition of \([0,1]\) be if \(t_{i}-t_{i-1}\) is the same for all \(i\text{?}\)</p></article><article class="definition definition-like" id="definition-22"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.3</span><span class="period">.</span>
+</h6>
+<p id="p-264">Given \([a,b]\) and calling \(\frac{b-a}{n}=\Delta t\text{,}\) we may for convenience give the partition \(\left\{a,a+\Delta t, a+2\Delta t, \ldots ,b-\Delta t, b\right\}\) the name <dfn class="terminology">regular partition</dfn> \(P_n\) (where \([a,b]\) is implicit).</p></article><article class="definition definition-like" id="definition-23"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.4</span><span class="period">.</span>
+</h6>
+<p id="p-265">Given a partition \(P=\{t_0,t_1,\ldots,t_n\}\) of \([a,b]\text{,}\) let \(y_i\) be the supremum of \(\{f(x)\mid x\in [t_{i-1},t_i]\}\text{.}\) We say that the sum</p>
+<div class="displaymath">
+\begin{equation*}
+U_{P}(f) = \sum_{i=1}^n y_i(t_i-t_{i-1})
+\end{equation*}
+</div>
+<p data-braille="continuation">is the <dfn class="terminology">upper sum</dfn> for \(P\) of \(f\) on \([a,b]\text{.}\)</p></article><article class="definition definition-like" id="definition-24"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.5</span><span class="period">.</span>
+</h6>
+<p id="p-266">Given a partition \(P=\{t_0,t_1,\ldots,t_n\}\) of \([a,b]\text{,}\) let \(z_i\) be the infimum of \(\{f(x)\mid x\in [t_{i-1},t_i]\}\text{.}\) We say the sum</p>
+<div class="displaymath">
+\begin{equation*}
+L_{P}(f) = \sum_{i=1}^n z_i(t_i-t_{i-1})
+\end{equation*}
+</div>
+<p data-braille="continuation">is the <dfn class="terminology">lower sum</dfn> for \(P\) of \(f\) on \([a,b]\text{.}\)</p></article><article class="definition definition-like" id="definition-25"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6</span><span class="period">.</span>
+</h6>
+<p id="p-267">A <dfn class="terminology">bounded function</dfn> is a function with a bounded image set.</p></article><p id="p-268">We will assume all functions in this section are bounded.</p>
+<article class="exercise exercise-like" id="exercise-43"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.7</span><span class="period">.</span>
+</h6>
+<p id="p-269">Give some upper and lower sums on some of these partitions with non-constant bounded functions.</p></article><article class="theorem theorem-like" id="thm-int-one-nonzero-point"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.8</span><span class="period">.</span>
+</h6>
+<p id="p-270">Let \(f(x)=0\) for each number \(x\) in \([0,1]\) except \(x=0\text{,}\) and let \(f(0)=1\text{.}\) For all partitions of \([0,1]\text{,}\) we have \(U_{P}(f)&gt;0\text{,}\) but for any positive number \(\varepsilon\) there is a partition \(P_\epsilon\) such that \(U_{P_\varepsilon}(f)\lt \varepsilon\text{.}\)</p></article><article class="problem example-like" id="problem-26"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.9</span><span class="period">.</span>
+</h6>
+<p id="p-271">Fully describe all lower sums of the function \(f\) from <a class="xref" data-knowl="./knowl/thm-int-one-nonzero-point.html" title="Theorem 5.8">Theorem 5.8</a> on \([0,1]\text{.}\)</p></article><article class="problem example-like" id="problem-27"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.10</span><span class="period">.</span>
+</h6>
+<p id="p-272">Let \(f(x)=x\text{,}\) and let \(P_n\) be the (regular) partition of \([0,1]\) given by \(\left\{0,\frac{1}{n},\frac{2}{n},\ldots,\frac{n-1}{n},1\right\}\text{.}\) Compute \(U_{P_5}(f)\) and \(L_{P_5}(f)\text{,}\) and then give a formula for \(U_{P_n}(f)\) and \(L_{P_n}(f)\text{.}\)</p></article><article class="theorem theorem-like" id="theorem-44"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.11</span><span class="period">.</span>
+</h6>
+<p id="p-273">Suppose that \(f\) is bounded.  If \(m\) is a lower bound and \(M\) is an upper bound of \(f([a,b])\text{,}\) then for any partition \(P\) of \([a,b]\text{,}\) \(U_P(f)\leq
+M(b-a)\) and \(L_P(f)\geq m(b-a)\text{.}\)</p></article><article class="theorem theorem-like" id="theorem-45"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.12</span><span class="period">.</span>
+</h6>
+<p id="p-274">If \(f\) is bounded on \([a,b]\) and \(P\) is a partition of \([a,b]\text{,}\) then \(L_P(f)\leq U_P(f)\text{.}\)</p></article><p id="p-275">Note that as a result of the previous problems that the set of all upper and lower sums of \(f\) is a bounded point set.</p>
+<article class="definition definition-like" id="definition-26"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.13</span><span class="period">.</span>
+</h6>
+<p id="p-276">We say that a partition \(Q\) <dfn class="terminology">refines</dfn> (or <dfn class="terminology">is a refinement of</dfn>) a partition \(P\) if \(P\) and \(Q\) are both partitions of \([a,b]\) and \(P\subseteq Q\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-44"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.14</span><span class="period">.</span>
+</h6>
+<p id="p-277">Take some partitions from previous examples, and refine them.</p></article><article class="theorem theorem-like" id="theorem-46"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.15</span><span class="period">.</span>
+</h6>
+<p id="p-278">If \(P\) and \(P'\) are both partitions of \([a,b]\text{,}\) then there is a partition \(Q\) which is a refinement of both.</p></article><article class="theorem theorem-like" id="theorem-47"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.16</span><span class="period">.</span>
+</h6>
+<p id="p-279">If \(f\) is a bounded function on \([a,b]\) and \(P\) and \(Q\) are partitions of \([a,b]\) such that \(Q\) refines \(P\text{,}\) then \(L_P(f)\leq L_Q(f)\) and \(U_P(f)\geq U_Q(f)\text{.}\)</p></article><p id="p-280">We are nearly ready to define (definite) integrals.</p>
+<article class="definition definition-like" id="definition-27"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.17</span><span class="period">.</span>
+</h6>
+<p id="p-281">With \(f\) a bounded function on \([a,b]\text{,}\) we define the <dfn class="terminology">upper integral</dfn> from \(a\) to \(b\) of \(f\) to be the infimum of the set of all upper sums for \(f\) on \([a,b]\text{.}\) We denote the upper integral by \(\overline{\int_a^b f}\text{.}\)</p></article><article class="definition definition-like" id="definition-28"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.18</span><span class="period">.</span>
+</h6>
+<p id="p-282">With \(f\) a bounded function on \([a,b]\text{,}\) we define the <dfn class="terminology">lower integral</dfn> from \(a\) to \(b\) of \(f\) to be the supremum of the set of all lower sums for \(f\) on \([a,b]\text{.}\) We denote the lower integral by \(\underline{\int_a^b f}\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-45"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.19</span><span class="period">.</span>
+</h6>
+<p id="p-283">Why do the upper integral and lower integral always exist in this context?</p></article><article class="theorem theorem-like" id="theorem-48"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.20</span><span class="period">.</span>
+</h6>
+<p id="p-284">If \(f\) is bounded on \([a,b]\text{,}\) then \(\overline{\int_a^b f}\geq \underline{\int_a^b f}\text{.}\)</p></article><article class="theorem theorem-like" id="theorem-49"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.21</span><span class="period">.</span>
+</h6>
+<p id="p-285">If we let \(f(x)\) be the function such that \(f(x)=1\) if \(x\in\mathbb{Q}\) but \(f(x)=0\) otherwise, then \(\overline{\int_0^1 f}&gt; \underline{\int_0^1 f}\text{.}\)</p></article><p id="p-286">We can get more interesting conclusions if \(f\) has more properties.</p>
+<article class="theorem theorem-like" id="theorem-50"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.22</span><span class="period">.</span>
+</h6>
+<p id="p-287">If \(f\) is continuous on \([a,b]\text{,}\) \(f(x)\geq 0\) for all \(x\in [a,b]\text{,}\) and for some \(z\in [a,b]\) we have that \(f(z)&gt;0\text{,}\) then \(\overline{\int_a^b f}&gt;0\text{.}\)</p></article><article class="definition definition-like" id="definition-29"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.23</span><span class="period">.</span>
+</h6>
+<p id="p-288">For \(f\) a bounded function on a closed interval \([a,b]\text{,}\) if \(\overline{\int_a^b f}=\underline{\int_a^b f}\text{,}\) then we say that \(f\) is <dfn class="terminology">integrable</dfn> on \([a,b]\) and call this common value the <dfn class="terminology">integral</dfn> of \(f\) from \(a\) to \(b\text{.}\) We denote the integral, if it exists, by</p>
+<div class="displaymath">
+\begin{equation*}
+\int_a^b f\text{ or } \int_a^b f(x)\, dx\;\text{.}
+\end{equation*}
+</div></article><p id="p-289">Traditionally when this value exists we say that \(f\) is <dfn class="terminology">Riemann integrable</dfn> and the number \(\int_a^b f\) is the <dfn class="terminology">Riemann integral</dfn>.  Technically, however, it is the <dfn class="terminology">Darboux integral</dfn>, with Riemann integrals coming from so-called Riemann sums.  The two notions can be proved equivalent.</p></section><section class="subsection" id="ssec_integration_integrable"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.2</span> <span class="title">Integrable Functions</span>
+</h3>
+<p id="p-290">Since we saw above that the lower and upper integrals can be distinct, there exist nonintegrable bounded functions (in this sense). Luckily, there also exist integrable functions.</p>
+<article class="exercise exercise-like" id="exercise-46"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.24</span><span class="period">.</span>
+</h6>
+<p id="p-291">Show that constant functions \(f(x)=c\) are integrable over any closed interval.</p></article><p id="p-292">The information we have from previous examples is <em class="emphasis">not</em> quite enough to show that we have more integrable functions, even though you are familiar with computing integrals. Since many applications in a variety of fields come directly from approximations involving the sums we have been computing, it would be best to have exact values for these applications, not just approximations from the sums. Keep this in mind as we progress.</p>
+<p id="p-293">A first step in this direction is the following characterization, which is very useful in showing functions are integrable.</p>
+<article class="theorem theorem-like" id="theorem-51"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.25</span><span class="period">.</span>
+</h6>
+<p id="p-294">Let \(f\) be a bounded function on \([a,b]\text{.}\)  The function \(f\) is integrable if and only if for each positive number \(\epsilon\) there is a partition \(P\) of \([a,b]\) such that \(U_P(f)-L_P(f)\lt \epsilon\text{.}\)</p></article><article class="problem example-like" id="problem-28"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.26</span><span class="period">.</span>
+</h6>
+<p id="p-295">Pick one of these functions, show it is integrable on \([0,1]\text{,}\) and compute it. (Both are; you may want to use previous results.)</p>
+<ul class="disc">
+<li id="li-18"><p id="p-296">The function \(f\) such that \(f(x)=0\) for each number \(x\) in \([0,1]\) except \(x=0\text{,}\) where \(f(0)=1\text{.}\)</p></li>
+<li id="li-19"><p id="p-297">The function \(f(x)=x\text{.}\)</p></li>
+</ul></article><article class="exercise exercise-like" id="exercise-47"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.27</span><span class="period">.</span>
+</h6>
+<p id="p-298">Let \(g(x)\) be the function such that \(f(x)=1/q\) if \(x=p/q\in\mathbb{Q}\) in lowest terms, but \(f(x)=0\) otherwise. Show this function is integrable.</p></article><p id="p-299">This is not a lot of material to integrate. The next sets of theorems will vastly expand our repertoire, though not yet our formulas.</p>
+<article class="definition definition-like" id="definition-30"><h6 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.28</span><span class="period">.</span>
+</h6>
+<p id="p-300">A function is <dfn class="terminology">nondecreasing</dfn> if for each \(x\lt y\) in the domain of \(f\) we have \(f(x)\leq f(y)\text{.}\) (We say that it is <dfn class="terminology">(strictly) increasing</dfn> if \(f(x)\lt f(y)\) always. The concept of <dfn class="terminology">nonincreasing</dfn> is defined with \(\geq\) in place of \(\leq\text{.}\))</p></article><article class="exercise exercise-like" id="exercise-48"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.29</span><span class="period">.</span>
+</h6>
+<p id="p-301">Give several nondecreasing functions we haven't already used. (This is <em class="emphasis">very</em> similar to the equivalent sequence concept!)</p></article><article class="theorem theorem-like" id="theorem-52"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.30</span><span class="period">.</span>
+</h6>
+<p id="p-302">If \(f\) is a nondecreasing bounded function on a closed interval \([a,b]\text{,}\) then \(f\) is integrable.</p></article><p id="p-303">You may want to write down a number of upper and lower sums to prepare for the previous problem. What previous result will likely be easiest to use to prove integration theorems?</p>
+<article class="exercise exercise-like" id="exercise-49"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.31</span><span class="period">.</span>
+</h6>
+<p id="p-304">It turns out that a nonincreasing bounded function \(f\) on a closed interval \([a,b]\) is integrable as well.</p></article><article class="exercise exercise-like" id="exercise-50"><h6 class="heading">
+<span class="type">Exercise</span><span class="space"> </span><span class="codenumber">5.32</span><span class="period">.</span>
+</h6>
+<p id="p-305">Since \(\sqrt{1-x^2}\) is nonincreasing on \([0,1]\text{,}\) this shows that</p>
+<p id="p-306">\(4\int_0^1 \sqrt{1-x^2}\,dx\) exists. What number is this?</p></article><p id="p-307">The preceding results mean that most standard functions are integrable on certain intervals, even if we can't finish computing them yet; the next theorems verify that we can do it on most intervals, too.</p>
+<article class="theorem theorem-like" id="theorem-53"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.33</span><span class="period">.</span>
+</h6>
+<p id="p-308">Let \(c\in \mathbb{R}\text{.}\) If \(f\) is integrable on \([a,b]\text{,}\) then \(cf\) is integrable on \([a,b]\) and \(\int_a^b cf = c\int_a^b f\text{.}\)</p></article><article class="theorem theorem-like" id="theorem-54"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.34</span><span class="period">.</span>
+</h6>
+<p id="p-310">If \(f\) and \(g\) are integrable on \([a,b]\text{,}\) then \(f+g\) is integrable and \(\int_a^b (f+g) = \int_a^b f +\int_a^b g\text{.}\)</p></article></section><section class="subsection" id="ssec_integration_FTC"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.3</span> <span class="title">FTC</span>
+</h3>
+<p id="p-312">We will now head straight for the punchline to the story of calculus, the “fundamental theorems”.</p>
+<p id="p-313">We begin by proving some facts about the upper integral (they are also true for the lower integral). Remember, all functions are bounded.</p>
+<article class="theorem theorem-like" id="theorem-55"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.35</span><span class="period">.</span>
+</h6>
+<p id="p-314">If \([a,b]\) is a closed interval and \(c\in (a,b)\text{,}\) then \(\overline{\int_a^c f} +\overline{\int_c^b f} = \overline{\int_a^b f}\text{.}\)</p></article><p id="p-315">On a related note, for upper (and indeed for lower and Riemann) integrals, we define \(\overline{\int_b^a f}=-\overline{\int_a^b f}\) and \(\overline{\int_a^a f} =0\text{.}\) Can you see why we do this?</p>
+<article class="theorem theorem-like" id="theorem-56"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.36</span><span class="period">.</span>
+</h6>
+<p id="p-316">If \(f\leq g\) on the interval \([a,b]\text{,}\) then \(\overline{\int_a^b f} \leq \overline{\int_a^b g}\text{.}\)</p></article><p id="p-317">The next property is of course also true for the regular integral (when it exists), and is called the integral mean value theorem. Can you see why?</p>
+<article class="theorem theorem-like" id="theorem-57"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.37</span><span class="period">.</span>
+</h6>
+<p id="p-318">If \(f\) be a continuous function on \([a,b]\text{,}\) then there is a number \(c\in [a,b]\) such that \(\overline{\int_a^b f} = f(c)(b-a)\text{.}\)</p></article><p id="p-319">The next thing we do is <em class="emphasis">really</em> expand our repertoire of integrable functions!</p>
+<article class="theorem theorem-like" id="theorem-58"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.38</span><span class="period">.</span>
+</h6>
+<p id="p-320">Let \(U\) be defined such that for each \(x\in [a,b]\text{,}\) \(U(x) = \overline{\int_a^x f}\text{,}\) and let \(L\) be defined likewise but with \(\underline{\int_a^x f}\text{.}\) If \(f\) is continuous on \([a,b]\text{,}\) then \(U\) and \(L\) are differentiable, with \(U'(x)=f(x)=L'(x)\text{.}\)</p></article><article class="problem example-like" id="problem-29"><h6 class="heading">
+<span class="type">Problem</span><span class="space"> </span><span class="codenumber">5.39</span><span class="period">.</span>
+</h6>
+<p id="p-321">In the previous theorem, show that in fact \(U(x)=L(x)\text{,}\) and conclude that if \(f\) is continuous on \([a,b]\) then \(f\) is integrable on \([a,b]\text{.}\)</p></article><p id="p-322">And finally we get the most beloved theorems of all. You should be able to prove these without lots of subtle work, using the facts about lower and upper integrals.</p>
+<article class="theorem theorem-like" id="theorem-59"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.40</span><span class="period">.</span><span class="space"> </span><span class="title">Fundamental Theorem of Calculus Part I.</span>
+</h6>
+<p id="p-323">Let \(f\) be a continuous function on \([a,b]\text{.}\)  If \(F\) is defined such that for each \(x\in [a,b]\text{,}\) \(F(x) = \int_a^x f\text{,}\) then for each point \(c\in
+[a,b]\text{,}\) \(F\) has a derivative at \(c\) and we can compute \(F'(c)=f(c)\text{.}\)</p></article><article class="theorem theorem-like" id="theorem-60"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.41</span><span class="period">.</span><span class="space"> </span><span class="title">Fundamental Theorem of Calculus Part II.</span>
+</h6>
+<p id="p-324">If \(g\) is a function on \([a,b]\text{,}\) \(g\) has a derivative at each point of \([a,b]\text{,}\) and the function \(g'\) is itself continuous at each point in \([a,b]\text{,}\) then  \(\int_a^b g' = g(b)-g(a)\text{.}\)</p></article><p id="p-325">These are the keys which made the efforts of Newton and Leibniz into the <em class="emphasis">calculus</em>—something one could calculate with. It is worth noting that this final theorem is true even if \(f'\) is just integrable—truly a great theorem.</p></section></section></div></main>
+</div>
+</body>
+</html>
