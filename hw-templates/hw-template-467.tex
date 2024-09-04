@@ -1,0 +1,81 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+% Lightly modified from Dana C. Ernst's homework template by Mitchel T. Keller
+
+\documentclass[12pt]{amsart}
+ 
+%\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{graphicx}
+% If you have issues getting this document to compile BEFORE YOU EDIT
+% ANYTHING, then I suggest commenting out the line below, which merely
+% changes the document font.
+\usepackage{mathptmx}
+
+
+%% Here are some custom commands relevant to MATH 341
+\newcommand{\N}{\mathbb{N}} % \N gets you the "blackboard bold" N
+                            % for natural numbers
+\newcommand{\Z}{\mathbb{Z}} % \Z gets you the "blackboard bold" Z for
+                            % integers 
+\newcommand{\R}{\mathbb{R}} % \R gets you the "blackboard bold" R for
+                            % real numbers
+\newcommand{\divides}{\mid}
+
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{question}[2][Question]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+ 
+\title{Weekly Homework x\\MATH 467---Linear Algebra}
+\author{Mitchel T.\ Keller}
+\maketitle
+
+\noindent\textbf{Collaboration statement}: This is where you put your
+collaboration statement. Ensure that it makes specific reference to
+this assignment's problems!
+
+\begin{problem}{x} %You can use theorem, exercise, problem, or question here.  Modify x to be whatever number you are proving/solving
+Delete this text and write the problem statement (or at least a
+summary of it here. If the problem asks you to find a formula for
+something and prove/explain it, restate the problem in a definitive
+way that includes the formula/number you found, rather than as a
+command of the form ``Find a formula\dots''. 
+\end{problem}
+ 
+\begin{proof}
+Blah, blah, blah.  Here is an example of the \texttt{align} environment:
+%Note 1: The * tells LaTeX not to number the lines.  If you remove the *, be sure to remove it below, too.
+%Note 2: Inside the align environment, you do not want to use $-signs.  The reason for this is that this is already a math environment. This is why we have to include \text{} around any text inside the align environment.
+\begin{align*}
+\sum_{i=1}^{k+1}i & = \left(\sum_{i=1}^{k}i\right) +(k+1)\\ 
+& = \frac{k(k+1)}{2}+k+1 & (\text{by inductive hypothesis})\\
+& = \frac{k(k+1)+2(k+1)}{2}\\
+& = \frac{(k+1)(k+2)}{2}\\
+& = \frac{(k+1)((k+1)+1)}{2}.
+\end{align*}
+\end{proof}
+ 
+\begin{theorem}{x.yz}
+Let \(n\in \Z\).  Then yada yada.
+\end{theorem}
+ 
+\begin{proof}[Solution] %Notice that this prints "Solution" instead of "Proof"
+  See the code for how I made this say ``Solution''
+
+\end{proof}
+
+
+\end{document}
